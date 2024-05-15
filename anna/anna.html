@@ -7,10 +7,13 @@
     <title>Szeretsz?</title>
 </head>
 <body>
+    <div class="box">
     <h1>Szeretsz engem???</h1>
     <button onclick="igen()">Igen</button> 
     <button id="movingbutton">Nem</button>
-    <center><p id="v"></p></center>
+    <br>
+    <p id="v"></p>
+    </div>
     <script>
         function igen(){
             document.getElementById("v").innerHTML = "❤Én is nagyon!❤";
@@ -21,11 +24,11 @@
 
         function change()
         {
-        let i = Math.floor(Math.random()*500)+1;
-        let j = Math.floor(Math.random()*500)+1;
-        console.log('here' , i ,j , b.style.left , b.style.top);
-            b.style.left = i+'px';
-            b.style.top = j + "px";
+        let l = Math.floor(Math.random()*500)+1;
+        let t = Math.floor(Math.random()*500)+1;
+        console.log('here' , l ,t , b.style.left , b.style.top);
+            b.style.left = l+'px';
+            b.style.top = t + "px";
 }
     </script>
 </body>
