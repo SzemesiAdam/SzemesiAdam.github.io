@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Szeretsz?</title>
+</head>
+<body>
+    <h1>Szeretsz engem???</h1>
+    <button onclick="igen()">Igen</button> 
+    <button id="movingbutton">Nem</button>
+    <center><p id="v"></p></center>
+    <script>
+        function igen(){
+            document.getElementById("v").innerHTML = "❤Én is nagyon!❤";
+        }
+
+        var b = document.querySelector("#movingbutton");
+        b.addEventListener("mousemove",change);
+
+        function change()
+        {
+        let i = Math.floor(Math.random()*500)+1;
+        let j = Math.floor(Math.random()*500)+1;
+        console.log('here' , i ,j , b.style.left , b.style.top);
+            b.style.left = i+'px';
+            b.style.top = j + "px";
+}
+    </script>
+</body>
+</html>
