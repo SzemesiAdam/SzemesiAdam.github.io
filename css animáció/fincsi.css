@@ -1,0 +1,122 @@
+@keyframes big{
+    from{
+        border: 2px white solid;
+        height: 300px;
+        width: 300px;
+        font-size: 100%;
+    }
+    to{
+        border: 2px black solid;
+        height: 350px;
+        width: 350px;
+        font-size: 110%;
+    }
+}
+@keyframes g{
+    from{
+        color: black;
+        background-color: yellow;
+    }
+    to{
+        color: yellow;
+        background-color: black;
+    }
+}
+.grid{
+    display: grid;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 90%;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+    grid-template-rows: auto;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: whitesmoke;   
+}
+header{
+    background-color: yellow;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+a:hover{
+    animation: g forwards;
+}
+header .title{
+    color: black;
+    grid-column: span 3;
+}
+header nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+header nav{
+    grid-column: span 9;
+    justify-self: end;
+}
+header .grid{
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+
+.menu{
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.logo{
+    height: 100%;
+    width: 120%;
+}
+.img{
+    grid-column: span 3;
+}
+.menu nav{
+    grid-column: span 9;
+    justify-self: center;
+}
+.menu nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: yellow;
+}
+
+.main{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.be{
+    grid-column: span 12;
+}
+.main .bek{
+    grid-column: span 12;
+    background-color: yellow;
+}
+.item{
+    grid-column: span 4;
+    background-color: white;
+}
+.k{
+    height: 200px;
+    width: 250px;
+}

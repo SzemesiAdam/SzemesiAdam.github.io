@@ -1,0 +1,165 @@
+ <div class="be">
+        <h3>Bevezető</h3>
+        <p>
+            Ezek az ételek amelyeket eltudok készíteni. Vannak köztük saját receptek és tanultak. <br>
+            by Szemesi Ádám <br>
+            <br>
+            <span style="font-style: italic; font-weight: bolder;">„Minden íz tökéletesen egyedi. És az ízek kombinációja teljesen új ízeket teremt.”</span>
+        </p>
+    </div>
+
+    <a name="fo"><div class="bek">Főételek</div></a>
+    <hr>
+    <div class="main">
+        <div class="item">
+            <h3>Rántotta</h3>
+            <ul>
+                <li>Elkészítés</li>
+                <li>Hozzávalok</li>
+            </ul>
+            <img src="k/c97ac5235a8a4edc0d5f4056900e6ac2.jpg" class="k">
+        </div>
+        <div class="item">
+            <h3>Taco</h3>
+            <ul>
+                <li>Elkészítés</li>
+                <li>Hozzávalok</li>
+            </ul>
+            <img src="k/letöltés.jpg" class="k">
+        </div>
+        <div class="item">
+            <h3>Békönös csavart</h3>
+            <ul>
+                <li>Elkészítés</li>
+                <li>Hozzávalok</li>
+            </ul>
+            <img src="k/baconos-csavart-recept-foto.jpg" class="k">
+        </div>
+    </div>
+
+    <a name="de"><div class="bek">Deszertek</div></a>
+    <hr>
+    <div class="main">
+        <div class="item">
+            <h3>Palacsinta</h3>
+            <ul>
+                <li>Elkészítés</li>
+                <li>Hozzávalok</li>
+            </ul>
+            <img src="k/palacsinta_csokikrem.jpg" class="k">
+        </div>
+        <div class="item">
+            <h3>Sportszelet</h3>
+            <ul>
+                <li>Elkészítés</li>
+                <li>Hozzávalok</li>
+            </ul>
+            <img src="k/hq720.jpg" class="k">
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Jó étvágyat!
+        </p>
+    </footer>
+
+    ------------------------
+        <div class="menu">
+        <div class="img">
+            <img src="k/logo.png" class="logo">
+        </div>
+        <div class="nav">
+            <button><a href="">Főételek</a></button>
+            <button><a href="">Deszertek</a></button>
+            <button><a href="">Sós deszertek</a></button>
+            <button><a href="">Levesek</a></button>
+            <button><a href="">Szószok</a></button>
+            <button><a href="">Szendvicsek</a></button>
+            <button><a href="">Vegán ételek</a></button>
+        </div>
+    </div>
+    -----------------------------
+    @keyframes big{
+    from{
+        border: 2px white solid;
+        height: 300px;
+        width: 300px;
+        font-size: 100%;
+    }
+    to{
+        border: 2px black solid;
+        height: 350px;
+        width: 350px;
+        font-size: 110%;
+    }
+}
+@keyframes g{
+    from{
+        color: black;
+        background-color: yellow;
+    }
+    to{
+        color: yellow;
+        background-color: black;
+    }
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: whitesmoke;   
+}
+.grid{
+    display: grid;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 90%;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+    grid-template-rows: auto;
+    margin: 10px;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+header .grid{
+    align-items: center;
+    padding: 5px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+    display: block;
+}
+a:hover{
+    animation: g forwards;
+}
+header nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+header nav{
+    grid-column: span 8;
+    justify-self: end;
+}
+.title{
+    grid-column: span 4;
+    color: white;
+    background-color: black;
+}
