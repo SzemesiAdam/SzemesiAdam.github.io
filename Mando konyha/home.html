@@ -12,19 +12,21 @@
         <div class="imgm">
             <img src="k/logo.png" style="width: 300px; height: 100px;">
         </div>
-        <button onclick="fooldal()">Főoldal</button>
-        <button onclick="foetel()">Főételek</button>
-        <button onclick="gyorsetel()">Gyors kaják</button>
-        <button onclick="deszert()">Deszertek</button>
+        <button onclick="order('home')">Főoldal</button>
+        <button onclick="order('foetelek')">Főételek</button>
+        <button onclick="order('gyorsetelek')">Gyors kaják</button>
+        <button onclick="order('deszertek')">Deszertek</button>
     </div>
     <!--Főoldal-->
-    <section id="h" style="display: block;">
+    <section id="home" style="display: block;">
         <div class="title">
             <h1>Mando konyha</h1>
         </div>
         <div class="mainhome">
             <div class="homebox">
-                <p style="font-style: italic; font-weight: bold; text-align: center;">„MINDEN ÍZ TÖKÉLETESEN EGYEDI. ÉS AZ ÍZEK KOMBINÁCIÓJA TELJESEN ÚJ ÍZEKET TEREMT.”</p>
+                <p style="font-style: italic; font-weight: bold; text-align: center;">
+                    „MINDEN ÍZ TÖKÉLETESEN EGYEDI. ÉS AZ ÍZEK KOMBINÁCIÓJA TELJESEN ÚJ ÍZEKET TEREMT.”
+                </p>
             </div>
             <div class="homebox">
                 <p>Köszöntjük a Mando konyha weboldalán! Itt meg ismerheti a népszerű ételeket hozzávalóikat 
@@ -42,12 +44,12 @@
         </div>
     </section>
     <!--Főételek-->
-    <section id="f" style="display: none;">
+    <section id="foetelek" style="display: none;">
         <div class="title">
             <h1>Főételek</h1>
         </div>
         <div class="main">
-            <div class="box" onclick="csilisbabf()">
+            <div class="box" onclick="order(csilisbab)">
                 <div>
                     <h2>Csilis bab</h2>
                 </div>
@@ -55,7 +57,7 @@
                     <img src="k/lead_Social_csilis-bab-recept.jpg" class="img">
                 </div>
             </div>
-            <div class="box" onclick="rantotaf()">
+            <div class="box" onclick="order(rantotta)">
                 <div>
                     <h2>Rántotta</h2>
                 </div>
@@ -65,13 +67,13 @@
             </div>
         </div>
     </section>
-    <!--Gyors kaják-->
-    <section id="g" style="display: none;">
+    <!--Gyors ételek-->
+    <section id="gyorsetelek" style="display: none;">
         <div class="title">
             <h1>Gyors ételek</h1>
         </div>
         <div class="main">
-            <div onclick="tacof()" class="box">
+            <div onclick="order(taco)" class="box">
                 <div>
                     <h2>Taco</h2>
                 </div>
@@ -79,7 +81,7 @@
                     <img src="k/letöltés.jpg" class="img">
                 </div>
             </div>
-            <div onclick="bekonf()" class="box">
+            <div onclick="order(bekonoscsavart)" class="box">
                 <div>
                     <h2>Békönös csavart</h2>
                 </div>
@@ -90,12 +92,12 @@
         </div>
     </section>
     <!--Deszertek-->
-    <section id="d" style="display: none;">
+    <section id="deszertek" style="display: none;">
         <div class="title">
             <h1>Deszertek</h1>
         </div>
         <div class="main">
-            <div onclick="palacsintaf()" class="box">
+            <div onclick="order(palacsinta)" class="box">
                 <div>
                     <h2>Palacsinta</h2>
                 </div>
@@ -103,7 +105,7 @@
                     <img src="k/palacsinta_csokikrem.jpg" class="img">
                 </div>
             </div>
-            <div onclick="sportszeletf()" class="box">
+            <div onclick="order(sportszelet)" class="box">
                 <div>
                     <h2>Sportszelet</h2>
                 </div>
@@ -116,39 +118,42 @@
 
     <!--Al oldalak-->
     <!--főételek-->
-    <section id="cs" style="display: none;">
+    <section id="csilisbab" style="display: none;">
         <div class="title">
             <h1>Csilis bab</h1>
         </div>
 
     </section>
-    <section id="r" style="display: none;">
+    <section id="rantotta" style="display: none;">
         <div class="title">
             <h1>Rántotta</h1>
         </div>
 
     </section>
+    <!---------------------------------------------------------------------->
     <!--Gyors ételek-->
-    <section id="t" style="display: none;">
+    <section id="taco" style="display: none;">
         <div class="title">
             <h1>Taco</h1>
         </div>
 
     </section>
-    <section id="b" style="display: none;">
+    <section id="bekonoscsavart" style="display: none;">
         <div class="title">
             <h1>Békönös csavart</h1>
         </div>
     
     </section>
+
+    <!--------------------------------------------------------------------->
     <!--deszertek-->
-    <section id="p" style="display: none;">
+    <section id="palacsinta" style="display: none;">
         <div class="title">
             <h1>Palacsinta</h1>
         </div>
 
     </section>
-    <section id="s" style="display: none;">
+    <section id="sportszelet" style="display: none;">
         <div class="title">
             <h1>Sportszelet</h1>
         </div>
