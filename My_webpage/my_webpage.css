@@ -45,6 +45,8 @@ a{
     flex-wrap: wrap;
     width: 100%;
     background-color: MidnightBlue;
+    position: sticky;
+    top: 0%;
 }
 .menu{
     display: flex;
@@ -174,6 +176,7 @@ a{
 }
 .icon{
     width: 80px;
+    transition: 0.3s;
 }
 .icon:hover{
     width: 90px;
@@ -188,6 +191,7 @@ a{
 #fooldalitem{
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 2%;
     width: 30%;
     height: 70%;
     display: flex;
@@ -198,6 +202,10 @@ a{
 @media only screen and (max-width: 800px){
     body{
         background-repeat: repeat;
+        font-size: small;
+    }
+    button{
+        margin: 2px;
     }
     .nav{
         display: flex;
@@ -208,6 +216,14 @@ a{
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+    .fotok{
+        width: 350px;
+        height: 600px;
+    }
+    .fk{
+        width: 350px;
+        height: 600px;
     }
     #fooldalitem{
         width: 100%;
