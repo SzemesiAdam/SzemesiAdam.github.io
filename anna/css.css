@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(6772374-awesome-heart-pattern-wallpaper.jpg);
+    color: yellow;
+}
+
+#v1{
+    font-size: x-large;
+    margin: 10px;
+}
+h1{
+    margin-top: 20px;
+}
+button{
+    border-radius: 10px;
+    font-size: large;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(212, 44, 100);
+    color: yellow;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#movingbutton{
+    position: absolute;
+}
+.main{
+    display: flex;
+    height: 880px;
+}
+.kbox{
+    width: 25%;
+    height: 880px;
+}
+.k{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 3px yellow solid;
+    border-radius: 10px;
+}
+.center{
+    flex: 1;
+    width: 50%;
+    border: 5px yellow solid;
+    border-radius: 30px;
+    background-color: rgb(212, 44, 100);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.a{
+    width: 60%; 
+    height: 50%;
+}
+.b{
+    width: 70%;
+    height: 50%;
+}

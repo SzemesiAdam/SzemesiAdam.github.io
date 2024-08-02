@@ -1,0 +1,69 @@
+.box{
+    margin-top:  3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    border: 3px solid yellow;
+    background-color: rgb(212, 44, 100);
+    border-radius: 20px;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+}
+button{
+    border-radius: 10px;
+
+.kb{
+    float: left;
+    margin-left: 20px;
+    width: 20%;
+    height: 25%;
+    border: 3px yellow solid;
+}
+.kj{
+    float: right;
+    margin-right: 20px;
+    width: 20%;
+    height: 25%;
+    border: 3px yellow solid;
+}
+    <div class="main">
+        <!--bal kép-->
+        <div class="b">
+            <img src="anna2.jpeg" class="k">
+        </div>
+        <!--cím,kérdés,dátum-->
+        <div class="center">
+            <div class="box">
+                <h1>Szeretsz engem???</h1>
+                <img src="cica.jpg" class="k">
+                <div>
+                    <button onclick="igen()">Igen</button> 
+                    <button id="movingbutton">Nem</button>
+                </div>
+                <br>
+                <p id="v"></p>
+            </div>
+    
+            <div class="box">
+                <h1>Boldog 11. hónapfordulott egyetlen pici hercegnőm</h1>
+            </div>
+    
+            <div class="box">
+                <p>Baráth Anna - Szemesi Ádám</p>
+                <p>2024.05.16.</p>
+            </div>
+        </div>
+
+        <div class="j">
+            <img src="IMG_20231228_101250.jpg" class="k">
+        </div>
+    </div>
+    color: yellow;
+    background-color: rgb(212, 44, 100);
+    font-size: x-large;
+}

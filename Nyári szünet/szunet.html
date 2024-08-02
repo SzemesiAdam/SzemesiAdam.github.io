@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Nyári szünet</title>
+</head>
+<body>
+    <div class="menu">
+        <button onclick="home()">Főoldal</button>
+        <button onclick="summer()">Nyár</button>
+        <button onclick="pro()">Programok</button>
+        <button onclick="es()">Események</button>
+        <button onclick="link()">Hivatkozások</button>
+    </div>
+    <section id="h" style="display: block;">
+        <div class="felirat">
+            <h1>Nyáriszünet</h1>
+        </div>
+        <div class="main">
+            <div class="box1">
+                <h2>Kezdete: Június 14.</h2>
+            </div>
+            <div class="box">
+                Írd ide a neved: <input type="text" id="nev">
+                <br>
+                Írd ide az életkorod: <input type="text" id="age">
+                <br>
+                Tél <input type="radio" id="t" onclick="tel()">
+                Tavasz <input type="radio" id="ta" onclick="tavasz()">
+                Nyár <input type="radio" id="n" onclick="ny()">
+                Ősz <input type="radio" id="o" onclick="osz()">
+                <p id="data"></p>
+                <p id="evszak"></p>
+            </div>
+        </div>
+    </section>
+    <section id="s" style="display: none;">
+        <div class="felirat">
+            <h1>Nyár</h1>
+        </div>
+        <div class="main">
+            <div class="box">
+                <p>
+                    A mérsékelt égöv egyik évszaka, a leghosszabb nappalok és a legmelegebb időjárás jellemzi, 
+                    időben a tavasz és az ősz között helyezkedik el. Trópusi, illetve száraz égövi tájakon nem létezik. 
+                    A beesési szögek szempontjából kitüntetett időpontok vannak a keringési pályán. 
+                    A Baktérítőn való (legdélebbi) zeniten delelés a téli napforduló (december 22.), 
+                    a Ráktérítőn való (legészakabbi) zeniten delelés a nyári napforduló (június 22.) napja, 
+                    március 21. és szeptember 23. a tavaszi és őszi napéjegyenlőségek időpontjai.
+                </p>
+                <p class="vers">
+                    <span style="font-size: large; font-weight: bold;">Kosztolányi Dezső: NYÁR, NYÁR, NYÁR</span> <br>
+                    <span style="color: red;">Ny</span>ár,<br>
+                    <span style="color: red;">A</span> régi vágyam egyre jobban<br>
+                    <span style="color: red;">L</span>obban,<br>
+                    <span style="color: red;">D</span>e vár, még egyre vár.<br>
+                    <br>
+                    <span style="color: red;">K</span>ár<br>
+                    <span style="color: red;">Í</span>gy késlekedned, mert az éj setétül.<br>
+                    <span style="color: red;">A</span>z élet<br>
+                    <span style="color: red;">S</span>iralmas és sivár<br>
+                    <span style="color: red;">E</span>nélkül.<br>
+                    <br>
+                    <span style="color: red;">G</span>igászi vágyam éhes, mint a hörcsög,<br>
+                    <span style="color: red;">G</span>örcsök<br>
+                    <span style="color: red;">E</span>mésztik s forró titkom mélye szörcsög.<br>
+                    <br>
+                    <span style="color: red;">M</span>ostan hajolj feléje.<br>
+                    <span style="color: red;">K</span>özel a lázak kéjes éje.<br>
+                    <span style="color: red;">A</span>karod?<br>
+                    <span style="color: red;">R</span>emegve nyújtsd a szájad és karod.<br>
+                    <span style="color: red;">I</span>tt ital illatja tégedet vár.<br>
+                    <span style="color: red;">N</span>ektár.<br>
+                    <br>
+                    <span style="color: red;">T</span>e<br>
+                    <span style="color: red;">H</span>űtelen, boldog leszel majd újra, hidd meg.<br>
+                    <span style="color: red;">I</span>dd meg.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="p" style="display: none;">
+        <div class="felirat">
+            <h1>Programok</h1>
+        </div>
+        <div class="main">
+            <div class="box">
+                <h2>Forma 1</h2>
+                <p>
+                    A Hungaroring Magyarország legjelentősebb autóverseny-pályája. Budapest és Gödöllő között, 
+                    az M3-as autópálya közelében található, Mogyoród külterületén (ennek ellenére 
+                    a nemzetközi sajtóban gyakran budapesti pályaként kommunikálják).
+                </p>
+                <div class="img">
+                    <img src="k/Hungaroring,_April_28,_2018_SkySat.jpg" style="height: 30%; width: 30%; border: 3px solid black; border-radius: 20px; ">
+                </div>
+            </div>
+            <div class="box">
+                <h2>Órfű szabadstrand</h2>
+                <p>
+                    Az Orfűi Kistó Strand a Mecsek ölelésében fekvő nyíltvízi strand, amely lassan mélyülő, 
+                    homokos parttal és parkos környezettel várja a kikapcsolódni vágyókat.
+                    A tó lassan mélyülő, homokos és a gyorsabban mélyülő, épített partja közül mindenki 
+                    megtalálja a kellemes fürdőzési lehetőséget. Az aktívabb időtöltést választókat 
+                    vízibicikli kölcsönző, a passzívabb pihenés híveit pedig sok árnyék várja. 
+                    A gyermekek kisállatokkal ismerkedhetnek, valamint a trambulinon és az ugrálóvárban 
+                    vezethetik le energiáikat.
+                </p>
+                <div class="img">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c2wquoAj0UQ?si=OwFr-F9mxWzB8sfZautoplay=1" 
+                    style="border: 3px solid black; border-radius: 20px;"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Siroki motoros találkozó</h2>
+                <p>
+                    Motorosok ezrei vesznek részt az év egyik legnagyobb találkozóján, a 
+                    Siroki Motoros Találkozón 2024. július 24-28. között. A rendezvény Kelet-Európa 
+                    legnagyobb motoros fesztiválja, ahol nemcsak a motorok de esténként számos 
+                    zenei koncert is várja az érdeklődőket.
+                </p>
+                <div class="img">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UCCHpFCMcOs?si=fLTVUiAOscDAbptJ" 
+                    style="border: 3px solid black; border-radius: 20px;"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Szegedi repülönap</h2>
+                <p>
+                    Ne maradj le az ország egyik legnagyobb repülős rendezvényéről! A Szegedi Reptéren megrendezésre 
+                    kerülő légi parádé, az ország egyik legrangosabb repülős eseménye, ahol két napon át 
+                    gyönyörködhetünk testközelből a gépmadarakban, helikopterekben és kápráztatnak el bennünket 
+                    a pilóták lélegzetelállító mutatványokkal. A családok által kedvelt rendezvényen, a légi 
+                    programok mellett idén a földközeli látnivalókból sem lesz hiány. A Szeged International 
+                    Airshow tervezett dátuma: 2024. szeptember 6-7.
+                </p>
+                <div class="img">
+                    <img src="k/szegedi-repulonapok-legiparade-1.jpg" style="height: 30%; width: 40%; border: 3px solid black; border-radius: 20px; ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="e" style="display: none;">
+        <div class="felirat">
+            <h1>Események</h1>
+        </div>
+        <div class="main">
+            <div class="box1">
+                <ul>
+                    <li>Augusztus 20. - tűzi játék</li>
+                    <li>Forma 1 Magyar Nagy díj</li>
+                    <li>Siroki motoros találkozó</li>
+                    <li>Múzeumok éjszakája</li>
+                    <li>Szegedi repülőnap</li>
+                    <li>Strandok éjszakája</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="hi" style="display: none;">
+        <div class="felirat">
+            <h1>Hivatkozások</h1>
+        </div>
+        <div class="main">
+            <div class="box1">
+                <h2>Készítette: Szemesi Ádám</h2>
+                <h2>2024.05.22.</h2>
+                <a href="https://hu.wikipedia.org/wiki/Wiki" target="_blank">Wikipédia</a>
+                <a href="https://www.programturizmus.hu/ajanlat-szegedi-repulonapok.html" target="_blank">Turizmus program</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
