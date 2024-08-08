@@ -38,6 +38,10 @@ h2{
 a{
     text-decoration: none;
     color: white;
+    margin: 10px;
+}
+p{
+    padding: 2%;
 }
 .link{
     margin: 2%;
@@ -119,7 +123,6 @@ a{
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     margin: 2%;
-    padding: 1%;
 }
 .k{
     width: 80%;
@@ -182,8 +185,6 @@ a{
     align-items: center;
 }
 .boxicon{
-    width: 250px;
-    height: 250px;
     margin: 2%;
     display: flex;
     justify-content: center;
@@ -231,12 +232,20 @@ a{
     justify-content: center;
 }
 #hobbiping{
-    width: 500px; 
+    width: 550px; 
     height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 #hobbimotor{
-    width: 500px; 
+    width: 550px; 
     height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
 /*medi*/
@@ -277,6 +286,8 @@ a{
         width: 350px;
         height: 300px;
     }
+}
+@media only screen and (max-width: 925px) {
     #hobbiping{
         width: 80%; 
         height: 80%;
