@@ -38,7 +38,7 @@ h2{
 a{
     text-decoration: none;
     color: white;
-    margin: 10px;
+    margin: 2%;
 }
 p{
     padding: 2%;
@@ -246,6 +246,9 @@ p{
     border-radius: 20px;
     margin: 2%;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+#jslink{
+    color: yellow;
 }
 
 /*medi*/
