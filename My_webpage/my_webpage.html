@@ -10,10 +10,16 @@
 <body>
     <!--menu; cim; könyvjelzök-->
     <div class="nav">
-        <button onclick="order('fooldal')">Főoldal</button>
-        <button onclick="order('ismerjmeg')">Ismerj meg</button>
-        <button onclick="order('referencia')">Referenciamunkák</button>
-        <button onclick="order('elerhetosegek')">Elérhetőségek</button>
+        <nav>
+            <ul>
+                <li><img class="close-icon" src="k/icon-close.webp" alt="close icon"></li>
+                <li><button onclick="order('fooldal')">Főoldal</button></li>
+                <li><button onclick="order('ismerjmeg')">Ismerj meg</button></li>
+                <li><button onclick="order('referencia')">Referenciamunkák</button></li>
+                <li><button onclick="order('elerhetosegek')">Elérhetőségek</button></li>
+            </ul>
+        </nav>
+        <img src="k/menu.png" onclick="menu()" class="menu-icon">
     </div>
     <!--főoldal-->
     <section id="fooldal" style="display: block;">
@@ -510,13 +516,11 @@
             <div class="menu">
                 <div id="elerhetoseg">
                     <div>
-                        <ul>
-                            <li><h3>Email:</h3></li>
-                            <p>adm.szemsi@gmil.com</p>
-                            <br>
-                            <li><h3>Tel. szám:</h3></li>
-                            <p>+36 70...</p>
-                        </ul>
+                        <h3>Email:</h3>
+                        <p>adm.szemsi@gmil.com</p>
+                        <br>
+                        <h3>Tel. szám:</h3>
+                        <p>+36 70...</p>
                     </div>
                 </div>
                 <div class="boxicon">

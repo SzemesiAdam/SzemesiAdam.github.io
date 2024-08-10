@@ -21,7 +21,7 @@ button{
     height: 40px;
     padding: 10px;
     margin: 10px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 20px;
     background-color: deepskyblue;
     color: white;
@@ -30,7 +30,7 @@ button{
 button:hover{
     color: black;
     background-color: deepskyblue;
-    border: 2px solid deepskyblue;
+    border: 3px solid deepskyblue;
 }
 h2{
     margin: 1%;
@@ -42,6 +42,13 @@ a{
 }
 p{
     padding: 2%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    text-decoration: none;
 }
 .link{
     margin: 2%;
@@ -57,7 +64,6 @@ p{
 .nav{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
     background-color: MidnightBlue;
     position: sticky;
@@ -249,7 +255,26 @@ p{
 }
 #jslink{
     color: yellow;
+    display: none;
 }
+.menu-icon {
+    width: 60px;
+    display: none;
+    filter: invert(1);
+    margin: 1%;
+}
+
+.close-icon {
+    width: 60px;
+    filter: invert(1);
+    display: none;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+
 
 /*medi*/
 @media only screen and (max-width: 800px){
@@ -263,7 +288,40 @@ p{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        position:relative;
+    }
+    .menu-icon {
+        display: initial;
+    }
+
+    .close-icon {
+        display: initial;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -110%;
+        width: 100vw;
+        height: 100vh;
+        background-color: midnightblue;
+        z-index: 100;
+        transition: right 0.5s;
+    }
+    nav.open {
+        right: 0;
+    }
+    nav.open ul {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav.open li {
+        margin: 20px 0;
+        font-size: 36px;
     }
     .title{
         font-size: small;
