@@ -161,6 +161,8 @@ li{
 .fotofekvobox{
     display: flex;
     justify-content: center;
+    width: auto;
+    height: auto;
 }
 .enigmafoto{
     border: 2px solid black;
@@ -300,8 +302,8 @@ ul{
         position: fixed;
         top: 0;
         right: -110%;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background-color: midnightblue;
         z-index: 100;
         transition: right 0.5s;
@@ -372,5 +374,13 @@ ul{
         width: 100%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .enigmafoto{
+        width: 90%;
+        height: 80%;
+    }
+    .fotokfekvo{
+        width: 90%;
+        height: 80%;
     }
 }
