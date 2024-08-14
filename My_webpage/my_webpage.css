@@ -197,10 +197,11 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 .icon{
     width: 80px;
-    margin: 2%;
+    margin: 10px;
     transition: 0.3s;
 }
 .icon:hover{
