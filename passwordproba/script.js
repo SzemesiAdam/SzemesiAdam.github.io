@@ -10,7 +10,8 @@ function checkWord() {
 
             if (inputWord === firstLine) {
                 order('links')
-                document.getElementById('result').textContent =  secondLine;
+                const linkElement = document.getElementById('dynamicLink');
+                linkElement.href = secondLine;
             }
         })
         .catch(error => {
