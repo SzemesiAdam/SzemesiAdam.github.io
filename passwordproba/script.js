@@ -9,9 +9,6 @@ function order(item){
         } 
     }
 }
-
-
-
 function checkWord() {
     const inputWord = document.getElementById('inputWord').value;
 
