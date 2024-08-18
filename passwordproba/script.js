@@ -1,14 +1,3 @@
-const oldalak = ["open", "links"]
-function order(item){
-    for(i = 0; i < oldalak.length; i++){
-        if(item != oldalak[i]){
-            document.getElementById(oldalak[i]).style.display = 'none' 
-        }
-        else{
-            document.getElementById(oldalak[i]).style.display = 'block'
-        } 
-    }
-}
 function checkWord() {
     const inputWord = document.getElementById('inputWord').value;
 
@@ -27,4 +16,15 @@ function checkWord() {
         .catch(error => {
             console.error('Hiba történt a fájl beolvasásakor:', error);
         });
+}
+const oldalak = ["open", "links"]
+function order(item){
+    for(i = 0; i < oldalak.length; i++){
+        if(item != oldalak[i]){
+            document.getElementById(oldalak[i]).style.display = 'none' 
+        }
+        else{
+            document.getElementById(oldalak[i]).style.display = 'block'
+        } 
+    }
 }
