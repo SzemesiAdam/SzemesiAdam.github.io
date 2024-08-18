@@ -9,9 +9,7 @@ function checkWord() {
             const secondLine = lines[1].trim();
 
             if (inputWord === firstLine) {
-                document.getElementById('result').textContent = `Helyes! A második sor: ${secondLine}`;
-            } else {
-                document.getElementById('result').textContent = 'Helytelen szó!';
+                document.getElementById('result').textContent =  secondLine;
             }
         })
         .catch(error => {
