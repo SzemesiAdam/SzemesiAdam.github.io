@@ -1,3 +1,4 @@
+//weblap váltó
 const oldalak = ["fooldal", "referencia", "ismerjmeg", "elerhetosegek", 
                     "kepszerkesztes", "videovagas", "weboldal", 
                     "programozas", "3d", "tulajdonsagaim", "hobik", 
@@ -12,14 +13,7 @@ function order(item){
         } 
     }
 }
-function secret(){
-    let jelszo = document.getElementById("password").value;
-    if(jelszo == '18+'){
-        document.getElementById("jslink").style.display = "block";
-        document.getElementById("kerdes").style.visibility = "hidden";
-    }
-}
-
+//mobil menu
 document.querySelector(".menu-icon").onclick = function(){
     document.querySelector("nav").classList.add("open");
 }
@@ -27,3 +21,4 @@ document.querySelector(".menu-icon").onclick = function(){
 document.querySelector(".close-icon").onclick = function(){
     document.querySelector("nav").classList.remove("open");
 }
+//jelszo
