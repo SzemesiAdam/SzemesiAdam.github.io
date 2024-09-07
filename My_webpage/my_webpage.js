@@ -10,6 +10,11 @@ function order(item){
         }
         else{
             document.getElementById(oldalak[i]).style.display = 'block'
+
+            window.scrollTo({
+                top: 0, // A lap tetejére ugrik
+                behavior: 'smooth' // Simább görgetés smooth
+            });
         } 
     }
 }
@@ -21,4 +26,3 @@ document.querySelector(".menu-icon").onclick = function(){
 document.querySelector(".close-icon").onclick = function(){
     document.querySelector("nav").classList.remove("open");
 }
-//jelszo

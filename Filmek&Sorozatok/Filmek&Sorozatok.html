@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek&Sorozatok</title>
+    <link rel="stylesheet" href="Filmek&Sorozatok.css">
+</head>
+<body>
+    <nav>
+        <div class="cim">
+            <h1><span style="color: rgb(0, 217, 255);">Filmek</span> & <span style="color: yellow;">Sorozatok</span></h1>
+        </div>
+        <div class="menu">
+            <button onclick="order('home')">Főoldal</button>
+            <button onclick="order('film'), filmek()">Filmek</button>
+            <button onclick="order('sorozatok'), sorozatok()">Sorozatok</button>
+            <button onclick="order('jatekok'), jatekok()">Játékok</button>
+            <button onclick="order('hozaad')">Hozáadás</button>
+        </div>
+        <div class="menuicon">
+            <img src="kepek/menu.png" onclick="order('menu-bar')">
+        </div>
+    </nav>
+    <section id="menu-bar" style="display: none;">
+        <div class="menupage">
+            <button onclick="order('home')">Főoldal</button>
+            <button onclick="order('film'), filmek()">Filmek</button>
+            <button onclick="order('sorozatok'), sorozatok()">Sorozatok</button>
+            <button onclick="order('jatekok'), jatekok()">Játékok</button>
+            <button onclick="order('hozaad')">Hozáadás</button>
+        </div>
+    </section>
+    <section id="home" style="display: block;">
+        <div class="box">
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section id="film" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: rgb(0, 217, 255);">Filmek</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="filmTable">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="sorozatok" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: yellow;">Sorozatok</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="seriesTable">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="jatekok" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: greenyellow;">Játékok</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="gameTable">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="hozaad" style="display: none;">
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="Filmek&Sorozatok.js"></script>
+</body>
+</html>
