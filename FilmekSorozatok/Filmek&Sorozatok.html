@@ -13,22 +13,20 @@
         </div>
         <div class="menu">
             <button onclick="order('home')">Főoldal</button>
-            <button onclick="order('film'), filmek()">Filmek</button>
-            <button onclick="order('sorozatok'), sorozatok()">Sorozatok</button>
-            <button onclick="order('jatekok'), jatekok()">Játékok</button>
-            <button onclick="order('hozaad')">Hozáadás</button>
+            <button onclick="order('film')">Filmek</button>
+            <button onclick="order('sorozatok')">Sorozatok</button>
+            <button onclick="order('jatekok')">Játékok</button>
         </div>
         <div class="menuicon">
-            <img src="kepek/menu.png" onclick="order('menu-bar')">
+            <img src="kepek/menu.png" class="icon" onclick="order('menu-bar')">
         </div>
     </nav>
     <section id="menu-bar" style="display: none;">
         <div class="menupage">
             <button onclick="order('home')">Főoldal</button>
-            <button onclick="order('film'), filmek()">Filmek</button>
-            <button onclick="order('sorozatok'), sorozatok()">Sorozatok</button>
-            <button onclick="order('jatekok'), jatekok()">Játékok</button>
-            <button onclick="order('hozaad')">Hozáadás</button>
+            <button onclick="order('film')">Filmek</button>
+            <button onclick="order('sorozatok')">Sorozatok</button>
+            <button onclick="order('jatekok')">Játékok</button>
         </div>
     </section>
     <section id="home" style="display: block;">
@@ -44,8 +42,15 @@
                 <h2><span style="color: rgb(0, 217, 255);">Filmek</span></h2>
             </div>
             <div class="tablazat">
-                <table id="filmTable">
-                    <tbody></tbody>
+                <table id="filmektabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -56,8 +61,16 @@
                 <h2><span style="color: yellow;">Sorozatok</span></h2>
             </div>
             <div class="tablazat">
-                <table id="seriesTable">
-                    <tbody></tbody>
+                <table id="sorozatoktabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Évad szám</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -68,14 +81,18 @@
                 <h2><span style="color: greenyellow;">Játékok</span></h2>
             </div>
             <div class="tablazat">
-                <table id="gameTable">
-                    <tbody></tbody>
+                <table id="jatekoktabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
-    </section>
-    <section id="hozaad" style="display: none;">
-
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script src="Filmek&Sorozatok.js"></script>
