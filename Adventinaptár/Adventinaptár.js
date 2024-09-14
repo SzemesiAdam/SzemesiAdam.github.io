@@ -6,7 +6,7 @@ const adventInfo = document.getElementById('adventInfo');
 // Ellenőrzés, hogy még advent előtt vagyunk-e
 if (today < adventStart) {
     const daysUntilAdvent = Math.ceil((adventStart - today) / (1000 * 60 * 60 * 24));
-    adventInfo.textContent = `Adventig még ${daysUntilAdvent} nap van.`;
+    adventInfo.innerHTML = `Adventig még <span style="color:yellow">` + daysUntilAdvent + `</span> nap van.`;
 } else {
     document.getElementById("napok").style.display = 'block'
     const dayOfAdvent = Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24)) + 1;
@@ -18,14 +18,14 @@ if (today < adventStart) {
     // Advent napjainak számlálása
     if(today.getDate() == 6){
         adventInfo.textContent = `Boldog Mikulást!`;
-        document.getElementById(dayOfAdvent + "title").style.color = "red"
+        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
     }
     else if(today.getDate() == 24){
         adventInfo.textContent = `Boldog karácsonyt!`;
-        document.getElementById(dayOfAdvent + "title").style.color = "red"
+        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
     }
     else{
         adventInfo.textContent = `Advent ${dayOfAdvent}. napja van.`;
-        document.getElementById(dayOfAdvent + "title").style.color = "red"
+        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
     }
 }

@@ -54,20 +54,17 @@ table {
     justify-content: flex-end;
 }
 .box{
-
     padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .felirat{
-
     height: 20vh;
     display: flex;
     align-items: center;
 }
 .tablazat{
-
     display: flex;
     justify-content: center;
 }
@@ -76,7 +73,6 @@ table {
     align-content: center;
     justify-content: center;
     height: 10vh;
-
 }
 .icon{
     width: 60px;
@@ -90,7 +86,15 @@ table {
     height: 85vh;
     
 }
-
+.item{
+    height: 20vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+p{
+    width: 50vw;
+}
 /*megjelenések*/
 @media only screen and (max-width: 1440px){
     .menu{
