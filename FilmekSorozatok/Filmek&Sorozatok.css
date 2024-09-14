@@ -13,7 +13,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+
     height: 10vh;
     border-bottom: 1px solid white;
     background-color: rgb(34, 42, 56);
@@ -54,20 +54,20 @@ table {
     justify-content: flex-end;
 }
 .box{
-    width: 98vw;
+
     padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .felirat{
-    width: 98vw;
+
     height: 20vh;
     display: flex;
     align-items: center;
 }
 .tablazat{
-    width: 98vw;
+
     display: flex;
     justify-content: center;
 }
