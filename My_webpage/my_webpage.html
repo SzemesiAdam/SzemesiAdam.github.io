@@ -9,18 +9,25 @@
 </head>
 <body>
     <!--menu; cim; könyvjelzök-->
-    <div class="nav">
-        <nav>
-            <ul>
-                <li><img class="close-icon" src="k/icon-close.webp" alt="close icon"></li>
-                <li><button onclick="order('fooldal')">Főoldal</button></li>
-                <li><button onclick="order('ismerjmeg')">Ismerj meg</button></li>
-                <li><button onclick="order('referencia')">Referenciamunkák</button></li>
-                <li><button onclick="order('elerhetosegek')">Elérhetőségek</button></li>
-            </ul>
-        </nav>
-        <img src="k/menu.png" onclick="menu()" class="menu-icon">
-    </div>
+    <nav>
+        <div class="menubar">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerj meg</button>
+            <button onclick="order('referencia')">Referenciamunkák</button>
+            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
+        </div>
+        <div onclick="order('menu')" class="mobilmenu">
+            <span id="e"></span><span id="e"></span><span id="e"></span>
+        </div>
+    </nav>
+    <section id="menu" style="display: none;">
+        <div class="menupage">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerj meg</button>
+            <button onclick="order('referencia')">Referenciamunkák</button>
+            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
+        </div>
+    </section>
     <!--főoldal-->
     <section id="fooldal" style="display: block;">
         <div class="title">
@@ -367,20 +374,18 @@
             <div class="item" style="width: 30%;">
                 <p>Videopad:</p>
             </div>
-            <div class="videopack">
-                <div class="video">
-                    <video width="70%" height="80%" controls>
-                        <source src="k/Rex visszatér.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item" style="width: 30%;">
-                    <p>Adobe Premiere Pro 2020:</p>
-                </div>
-                <div class="video">
-                    <video width="70%" height="80%" controls>
-                        <source src="k/Nerra.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <div class="video">
+                <video width="70%" height="80%" controls>
+                    <source src="k/Rex visszatér.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item" style="width: 30%;">
+                <p>Adobe Premiere Pro 2020:</p>
+            </div>
+            <div class="video">
+                <video width="70%" height="80%" controls>
+                    <source src="k/Nerra.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
@@ -511,27 +516,25 @@
         <div class="title">
             <h1>Elérhetőségek</h1>
         </div>
-        <div class="box">
-            <div class="menu">
-                <div id="elerhetoseg">
-                    <div>
-                        <h3>Email:</h3>
-                        <p>adm.szemsi@gmil.com</p>
-                        <br>
-                        <h3>Tel. szám:</h3>
-                        <p>+36 70...</p>
-                    </div>
+        <div class="menu">
+            <div id="elerhetoseg" >
+                <div>
+                    <h3>Email:</h3>
+                    <p>adm.szemsi@gmil.com</p>
+                    <br>
+                    <h3>Tel. szám:</h3>
+                    <p>+36 70...</p>
                 </div>
-                <div class="boxicon">
-                    <div>
-                        <a href="https://www.facebook.com/adam.szemesi.7?locale=hu_HU" target="_blank"><img src="k/facebook.png" class="icon"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/adamszemesi/" target="_blank"><img src="k/social.png" class="icon"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.tiktok.com/@szemesi.adam?lang=hu-HU" target="_blank"><img src="k/tik-tok.png" class="icon"></a>
-                    </div>
+            </div>
+            <div class="boxicon">
+                <div>
+                    <a href="https://www.facebook.com/adam.szemesi.7?locale=hu_HU" target="_blank"><img src="k/facebook.png" class="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/adamszemesi/" target="_blank"><img src="k/social.png" class="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@szemesi.adam?lang=hu-HU" target="_blank"><img src="k/tik-tok.png" class="icon"></a>
                 </div>
             </div>
         </div>
