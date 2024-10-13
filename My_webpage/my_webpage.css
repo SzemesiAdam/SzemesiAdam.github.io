@@ -257,6 +257,7 @@ ul{
     }
     .mobilmenu{
         visibility: visible;
+        transition: 0.8s;
     }
     button{
         width: 50vw;
