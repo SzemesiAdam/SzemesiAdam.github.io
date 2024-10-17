@@ -115,8 +115,10 @@ nav{
 .item{
     background-color: #555151;
     border-left: 2px solid #fff1e2;
-    margin-top: 2vh;
     padding: 1vw;
+}
+.item:first-child{
+    margin-top: 2vh;
 }
 .k{
     width: 80%;
