@@ -46,12 +46,6 @@ table {
     justify-content: center;
     align-items: center;
 }
-.menu{
-    width: 45vw;
-    display: flex;
-    justify-content: center;
-    justify-content: flex-end;
-}
 .box{
     padding-bottom: 10vh;
     display: flex;
@@ -93,21 +87,40 @@ table {
 p{
     width: 50vw;
 }
+.mobilmenu{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10vw;
+    color: #fff1e2;
+    margin: 1vw;
+}
+#e{
+    width: 5vw;
+    margin: 0.5vh;
+    border: 2px solid #fff1e2;   
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 /*megjelenések*/
 @media only screen and (max-width: 1440px){
+    .cim{
+        width: 80vw;
+    }
     .menu{
         display: none;
     }
-    .icon{
-        display: block;
-        padding-right: 1%;
-    }
-    .menuicon{
-        display: block;
+    .mobilmenu{
         visibility: visible;
-        width: 15vw;
+        transition: 0.8s;
     }
-    .cim{
-        width: 80vw;
+    button{
+        width: 50vw;
     }
 }

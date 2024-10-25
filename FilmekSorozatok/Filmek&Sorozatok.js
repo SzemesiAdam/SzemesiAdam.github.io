@@ -1,16 +1,42 @@
-const pages = ["home", "menu-bar", "film", "sorozatok", "jatekok"]
+let allas = false;
+let elozolap = "home";
+let menukat = false;
+
+const oldalak = ["home", "menu-bar", "film", "sorozatok", "jatekok"]
+
 function order(item){
-    for(i = 0; i < pages.length; i++){
-        if(item != pages[i]){
-            document.getElementById(pages[i]).style.display = 'none'
+    if(allas == false){
+        document.querySelector('.mobilmenu').style.transform = 'rotate(90deg)'; 
+        allas = true;
+    }
+    else{
+        document.querySelector('.mobilmenu').style.transform = 'rotate(0deg)'; 
+        allas = false;
+    }
+    for(i = 0; i < oldalak.length; i++){
+        if(item != oldalak[i]){
+            document.getElementById(oldalak[i]).style.display = 'none' 
         }
         else{
-            document.getElementById(pages[i]).style.display = 'block'
+            document.getElementById(oldalak[i]).style.display = 'block'
+            if(item != "menu-bar"){
+                elozolap = oldalak[i];
+                menukat = false;
+                console.log(elozolap);
+            }
+            else if(menukat == true){
+                document.getElementById(elozolap).style.display = 'block';
+                document.getElementById("menu-bar").style.display = 'none';
+                menukat = false;
+            }
+            else{
+                    menukat = true;
+            }
             window.scrollTo({
                 top: 0, // A lap tetejére ugrik
-                behavior: 'smooth' // Simább görgetés smooth
+                //behavior: 'smooth' Simább görgetés smooth
             });
-        }
+        } 
     }
 }
 
