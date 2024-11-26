@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoros túrák</title>
+    <link rel="stylesheet" href="Motoros_túrák.css">
+    <link rel="icon" href="k/iconweb.jpg">
+</head>
+<body>
+    <nav>
+        <div class="menubar">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('turak')">Túrák</button>
+            <button onclick="order('tervek')">Tervek</button>
+            <button onclick="order('motorok')">Motorok</button>
+        </div>
+        <div onclick="order('menu')" class="mobilmenu">
+            <span id="e"></span><span id="e"></span><span id="e"></span>
+        </div>
+    </nav>
+    <section id="menu" style="display: none;">
+        <div class="menupage">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('turak')">Túrák</button>
+            <button onclick="order('tervek')">Tervek</button>
+            <button onclick="order('motorok')">Motorok</button> 
+        </div>
+    </section>
+    <section id="fooldal" style="display: block;">
+        <header>
+            <div class="title">
+                <h1>Köszöntelek a weboldalon!</h1>
+            </div>
+        </header>
+        <div class="fooldalbox">
+            <div class="item">
+                <h2>Üdvözöllek a motoros túrák világában!</h2>
+                <p>
+                    Ez az oldal azoknak készült, akik szenvedélyesen 
+                    szeretik a motorozást és a kalandokat. Itt bemutatom 
+                    az általam már megtett motoros túrákat, élményekkel 
+                    és tippekkel kiegészítve, valamint megosztom azokat 
+                    a túraterv ötleteket, amelyeket a jövőben szeretnék 
+                    megvalósítani. 
+                    <br>
+                    Célom, hogy inspirációt és segítséget nyújtanak 
+                    mindazoknak, akik szívesen fedeznék fel a világot 
+                    kétkeréken.
+                    <br> 
+                    Böngéssz, tervezz, és csatlakoz!
+                    <br>
+                    Széles utatt mindenkinek!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="turak" style="display: none;">
+        <header>
+            <div class="title">
+                <h1>Túrák</h1>
+            </div>
+        </header>
+
+    </section>
+    <section id="tervek" style="display: none;">
+        <header>
+            <div class="title">
+                <h1>Tervek</h1>
+            </div>
+        </header>
+
+    </section>
+    <section id="motorok" style="display: none;">
+        <header>
+            <div class="title">
+                <h1>Motorok</h1>
+            </div>
+        </header>
+        <div class="box">
+            <div class="item">
+                <h2>Honda CB 500 1995</h2>
+                <p>
+                    A Honda CB 500  a Honda által 1993 és 2003 között 
+                    gyártott közepes méretű szabványos motorkerékpárok 
+                    családja voltak. Alacsony költségük, megbízhatóságuk 
+                    és jó kezelhetőségük miatt népszerűek voltak. 
+                    Az Egyesült Királyságban a Honda CB500 Cup versenyen 
+                    is részt vettek (a nevét 2009-ben Thundersport 
+                    500-ra változtatta, amikor a Suzuki GS500 és a 
+                    Kawasaki ER-5 is szerepelt).
+                </p>
+                <table>
+                    <tr>
+                        <td>Kategória</td>
+                        <td>Naked bike</td>
+                    </tr>
+                    <tr>
+                        <td>Teljesítmény</td>
+                        <td>58.00 LE (42.3 kW)</td>
+                    </tr>
+                    <tr>
+                        <td>Hengerek száma</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Váltó</td>
+                        <td>6 sebességes</td>
+                    </tr>
+                    <tr>
+                        <td>Üzemanyag kapacitás</td>
+                        <td>18 L</td>
+                    </tr>
+                    <tr>
+                        <td>Hajtás</td>
+                        <td>Lánc</td>
+                    </tr>
+                </table>
+                <div class="boxkep">
+                    <img src="k/IMG_20241109_105747.jpg" class="kep">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Készítette: Szemesi Ádám</h3>
+    </footer>
+    <script src="Motoros_túrák.js"></script>
+</body>
+</html>

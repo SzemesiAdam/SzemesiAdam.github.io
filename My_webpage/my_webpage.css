@@ -51,7 +51,6 @@ nav{
     background-color: #623f2b;
     position: sticky;
     top: 0%;
-    border-bottom: 2px solid #fff1e2;
 }
 .menubar{
     display: flex;
@@ -105,12 +104,6 @@ nav{
     margin-right: 5%;
     display: flex;
     flex-direction: column;
-}
-.fooldalbox{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
 }
 .item{
     background-color: #555151;
