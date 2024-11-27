@@ -30,30 +30,38 @@ nav{
     justify-content: flex-end;
     align-items: center;
     top: 0%;
-    position: sticky;
+
     height: 8vh;
     padding-right: 1vw;
     background-color: #380f17;
     border-bottom: 2px solid white;
 }
 button{
-    background-color: #8f0b13;
+    background-color: #380f17;
     color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 110px;
-    height: 50px;
-    padding: 1vw;
-    margin: 1vw;
-    font-size: large;
+    border: 0px solid;
+    font-size: 2.5vh;
     font-weight: bold;
+    height: 8vh;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-p, h2{
+button:hover{
+    background-color: #4c4f54;
+}
+p, h2, h3{
     padding: 1vh;
 }
-p{
+h3{
+    padding-left: 2.5vw;
+}
+p, ul, ol{
     margin-left: 5vw;
     margin-right: 5vw;
+}
+a{
+    text-decoration: none;
+    color: #380f17;
 }
 table, th, td {
     border: 2px solid white;
@@ -72,7 +80,7 @@ td{
     align-items: center;
     height: 80vh;
     margin-left: 5vw;
-    font-size:3vh;
+    font-size:3.5vh;
     color: white;
 }
 .fooldalbox{
