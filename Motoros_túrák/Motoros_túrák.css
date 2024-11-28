@@ -3,8 +3,7 @@
     padding: 0%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: system-ui;
     font-size: large;
     line-height: 3.5vh;
     color: white;
@@ -14,7 +13,9 @@ header{
     background-image: url(k/1735734-2880x1800-desktop-hd-suzuki-sv650-wallpaper-image.jpg);
     background-size: cover;
     height: 92vh;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #ff7c39;
+    display: flex;
+    align-items: center;
 }
 footer{
     height: 10vh;
@@ -30,14 +31,13 @@ nav{
     justify-content: flex-end;
     align-items: center;
     top: 0%;
-
     height: 8vh;
     padding-right: 1vw;
-    background-color: #380f17;
+    background-color: #ff7c39;
     border-bottom: 2px solid white;
 }
 button{
-    background-color: #380f17;
+    background-color: #ff7c39;
     color: white;
     border: 0px solid;
     font-size: 2.5vh;
@@ -47,21 +47,38 @@ button{
     padding-left: 15px;
 }
 button:hover{
-    background-color: #4c4f54;
+    background-color: #ffb18a;
 }
-p, h2, h3{
+p{
+    padding: 1.5vh;
+}
+h2{
+    background-color: #ff7c39;
     padding: 1vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 40vw;
 }
 h3{
+    padding: 1vh;
     padding-left: 2.5vw;
+    border: 2px solid #ff7c39;
+    border-top-right-radius: 20px;
+    width: 10vw;
 }
 p, ul, ol{
     margin-left: 5vw;
     margin-right: 5vw;
 }
+ul, ol{
+    padding: 2vh;
+}
 a{
+    color: #ff7c39;
+    font-weight: bold;
     text-decoration: none;
-    color: #380f17;
 }
 table, th, td {
     border: 2px solid white;
@@ -76,12 +93,17 @@ td{
 }
 .title{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 80vh;
+    flex-direction: column;
+    height: 20vh;
     margin-left: 5vw;
-    font-size:3.5vh;
+    font-size:7vh;
+    color: #ff7c39;
+}
+.title h4{
     color: white;
+    margin-top: 5vh;
+    font-size:5vh;
 }
 .fooldalbox{
     margin-top: 25vh;
@@ -90,25 +112,26 @@ td{
     margin-left: 10vw;
     margin-right: 10vw;
     background-color: #252b2b;
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    box-shadow: 0 4px 8px 0 #ff7c39, 0 6px 20px 0 #ff7c39;
     border-radius: 20px;
 }
 .box{
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 2vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     background-color: #252b2b;
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    box-shadow: 0 4px 8px 0 #ff7c39, 0 6px 20px 0 #ff7c39;
     border-radius: 20px;
 }
 .item{
     margin: 2vh;
+    margin-top: 0%;
     padding: 2vh;
     background-color: #4c4f54;
     border-radius: 20px;
-    border: 2px solid white;
+    border-top-left-radius: 0px;
 }
 .mobilmenu{
     visibility: hidden;
