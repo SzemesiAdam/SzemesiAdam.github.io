@@ -99,9 +99,11 @@ td{
     margin-left: 5vw;
     font-size:7vh;
     color: #ff7c39;
+    -webkit-text-stroke: 3px white;
 }
 .title h4{
     color: white;
+    -webkit-text-stroke: 1px black;
     margin-top: 5vh;
     font-size:5vh;
 }

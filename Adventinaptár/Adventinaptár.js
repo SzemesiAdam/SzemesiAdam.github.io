@@ -1,26 +1,25 @@
 // Advent első napja idén (az első adventi vasárnap)
 const adventStart = new Date('2024-12-01');
-const today = new Date();
+const today = new Date('2024-12-01');
 const adventInfo = document.getElementById('adventInfo');
-
 // Ellenőrzés, hogy még advent előtt vagyunk-e
 if (today < adventStart) {
-    const daysUntilAdvent = Math.ceil((adventStart - today) / (1000 * 60 * 60 * 24));
+    const daysUntilAdvent = Math.ceil((adventStart - today) / (1000 * 60 * 60 * 24) + 1);
     adventInfo.innerHTML = `Adventig még <span style="color:yellow">` + daysUntilAdvent + `</span> nap van.`;
-} else {
+} 
+else {
     document.getElementById("napok").style.display = 'block'
-    const dayOfAdvent = Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24)) + 1;
+    const dayOfAdvent = today.getDay() + 1  //Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24));
 
-    let i;
     for (let i = dayOfAdvent; i >= 1; i--){
-        document.getElementById(`${i}`).style.display = 'block';
+        document.getElementById(i).style.display = 'block';
     }
     // Advent napjainak számlálása
-    if(today.getDate() == 6){
+    if(dayOfAdvent == 6){
         adventInfo.textContent = `Boldog Mikulást!`;
         document.getElementById(dayOfAdvent + "title").style.color = "yellow"
     }
-    else if(today.getDate() == 24){
+    else if(dayOfAdvent == 24){
         adventInfo.textContent = `Boldog karácsonyt!`;
         document.getElementById(dayOfAdvent + "title").style.color = "yellow"
     }
