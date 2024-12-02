@@ -1,6 +1,6 @@
 // Advent első napja idén (az első adventi vasárnap)
 const adventStart = new Date('2024-12-01');
-const today = new Date('2024-12-01');
+const today = new Date();
 const adventInfo = document.getElementById('adventInfo');
 // Ellenőrzés, hogy még advent előtt vagyunk-e
 if (today < adventStart) {
@@ -9,7 +9,7 @@ if (today < adventStart) {
 } 
 else {
     document.getElementById("napok").style.display = 'block'
-    const dayOfAdvent = today.getDay() + 1  //Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24));
+    const dayOfAdvent = Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24));
 
     for (let i = dayOfAdvent; i >= 1; i--){
         document.getElementById(i).style.display = 'block';
