@@ -169,11 +169,12 @@ td{
 /* görgő */
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #252b2b;
+    background: #252b2b;
 }
 ::-webkit-scrollbar-thumb {
     background: #ff7c39;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     
 } 
 ::-webkit-scrollbar-thumb:hover{
