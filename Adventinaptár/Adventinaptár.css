@@ -12,6 +12,16 @@ h2{
     padding-top: 2%;
     padding-bottom: 4%;
 }
+footer{
+    bottom: 0px;
+    height: 10vh;
+    background: #c6849b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    border-top: 2px solid #38283e;
+}
 .menu{
     display: flex;
     flex-direction: column;
@@ -53,6 +63,16 @@ h2{
     border-radius: 20px;
     border: 2px solid #895873;
 }
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
+    background: #c6849b;
+}
+::-webkit-scrollbar-thumb{
+    background: #895873;
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 770px){
     .container{
         width: 100%;

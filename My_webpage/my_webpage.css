@@ -3,9 +3,9 @@
     padding: 0%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui;
     color: #fff1e2;
-    font-weight: bold;
+    font-weight:450;
     line-height: 170%;
     background-color: #1b1b1b
 }
@@ -243,7 +243,15 @@ ul{
     color: #fff1e2;
     margin: 1vw;
 }
-
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
+    background: #623f2b;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #b76e2d;
+}
 
 /*medi*/
 @media only screen and (max-width: 600px){
