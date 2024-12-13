@@ -129,6 +129,18 @@ td{
     box-shadow: 0 4px 8px 0 #ff7c39, 0 6px 20px 0 #ff7c39;
     border-radius: 20px;
 }
+.terkep{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 50vw; 
+    height: 60vh; 
+    border: 6px solid #252b2b; 
+    border-radius: 20px;
+    margin: 1vh;  
+}
 .item{
     margin: 2vh;
     margin-top: 0%;
@@ -136,6 +148,11 @@ td{
     background-color: #4c4f54;
     border-radius: 20px;
     border-top-left-radius: 0px;
+}
+.item .terkep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mobilmenu{
     visibility: hidden;
@@ -220,5 +237,11 @@ td{
     }
     h4{
         line-height: 5vh;
+    }
+    iframe{
+        width: 100vw;
+        border-radius: 0%;
+        margin-left: 0vh;
+        margin-right: 0vh;
     }
 }
