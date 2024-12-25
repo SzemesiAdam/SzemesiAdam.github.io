@@ -1,30 +1,41 @@
-// Advent első napja idén (az első adventi vasárnap)
-const adventStart = new Date('2024-12-01');
-const today = new Date();
-const adventInfo = document.getElementById('adventInfo');
-// Ellenőrzés, hogy még advent előtt vagyunk-e
-if (today < adventStart) {
-    const daysUntilAdvent = Math.ceil((adventStart - today) / (1000 * 60 * 60 * 24) + 1);
-    adventInfo.innerHTML = `Adventig még <span style="color:yellow">` + daysUntilAdvent + `</span> nap van.`;
-} 
-else {
-    document.getElementById("napok").style.display = 'block'
-    const dayOfAdvent = Math.ceil((today - adventStart) / (1000 * 60 * 60 * 24));
 
-    for (let i = dayOfAdvent; i >= 1; i--){
-        document.getElementById(i).style.display = 'block';
+const today = new Date();
+let year = today.getFullYear();
+const adventStart = new Date(year, 11, 1); // December 1.
+const adventEnd = new Date(year, 11, 24); // December 24.
+var mounth = today.getMonth() + 1;
+var day = today.getDate();
+var counter = 0;
+
+if(mounth == 12 && day < 24){
+    if(day == 6){
+        document.getElementById('nap').innerHTML = "Boldog Mikulást!"
     }
-    // Advent napjainak számlálása
-    if(dayOfAdvent == 6){
-        adventInfo.textContent = `Boldog Mikulást!`;
-        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
-    }
-    else if(dayOfAdvent == 24){
-        adventInfo.textContent = `Boldog karácsonyt!`;
-        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
+    else if (day == 24){
+        document.getElementById('nap').innerHTML = "Boldog Karácsonyt!"
     }
     else{
-        adventInfo.textContent = `Advent ${dayOfAdvent}. napja van.`;
-        document.getElementById(dayOfAdvent + "title").style.color = "yellow"
+        document.getElementById('nap').innerHTML = "Advent " + day + ". napja van!"
+    }
+}
+else{
+    year += 1; // Következő év
+    const nextAdventStart = new Date(year, 11, 1); // Következő évi advent kezdete
+    const diffTime = nextAdventStart - today;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById('nap').innerHTML = `Adventig még <span style="color:yellow">` + diffDays + `</span> nap van.`;
+}
+
+function order(item){
+    if(item <= day && day <= 24){
+        document.getElementById(item).style.display = 'block';
+    }
+}
+function secret(){
+    if(counter == 5){
+        document.getElementById('secret').style.display = "block";
+    }
+    else{
+        counter = counter + 1;
     }
 }

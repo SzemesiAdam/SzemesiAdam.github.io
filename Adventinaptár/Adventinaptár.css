@@ -3,42 +3,25 @@
     padding: 0%;
 }
 body{
-
-    background-color: #fbe0c2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #38283e;
-}
-h2{
-    padding-top: 2%;
-    padding-bottom: 4%;
+    background-color: #db8628;
+    /* background-color: #304434; */
+    color: yellow;
+    font-family: Georgia;
 }
 footer{
     bottom: 0px;
-    height: 10vh;
-    background: #c6849b;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5vh;
-    border-top: 2px solid #38283e;
 }
-.menu{
+.title{
+    height: 7vh;
+    padding-top: 1vh;
+    color: yellow;
     display: flex;
-    flex-direction: column;
-}
-.cim{
-    background-color: #c6849b;
-    height: 10vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-#return{
-    background-color: #efb6bb;
-    height: 10vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
 .container{
     display: flex;
@@ -46,54 +29,67 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.kepek{
-    width: 30vw;
-    height: 30vw;
+.box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(k/backgraund1.jpg);
+}
+.megjelen{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 2.5vh;
+    background-color: #820d13;
+    border: 2px solid yellow;
     border-radius: 20px;
 }
-.kepbox{
-    width: 36vw;
-    height: 36vw;
-    background-color: #b4a4b9;
+h2{
+    width: 50%;
+    height: 10%;
+    padding: 0.5vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2%;
-    border-radius: 20px;
-    border: 2px solid #895873;
-}
-/* scroll bar */
-::-webkit-scrollbar{
-    width: 10px;
-    background: #c6849b;
-}
-::-webkit-scrollbar-thumb{
-    background: #895873;
+    background-color: #820d13;
+    border: 2px solid yellow;
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 770px){
-    .container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .kepbox{
-        width: 99%;
-        height: 70%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    .kepek{
-        width: 80%;
-        height: 80%;
-        margin: 1.5%;
-    }
+/* hátterek */
+.container > div:nth-child(2n){
+    background-image: url(k/backgraund2.jpg);
 }
-@media only screen and (max-width: 450px){
+.container > div:nth-child(3n){
+    background-image: url(k/backgraund3.jpg);
+}
+.container > div:nth-child(4n){
+    background-image: url(k/backgraund4.jpg);
+}
+.container > div:nth-child(5n){
+    background-image: url(k/backgraund5.jpg);
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+@media only screen and (max-width: 385px) {
     h1{
-        font-size: 6vw;
+        font-size: 8vw;
+    }
+    .box{
+        border-radius: 0px;
     }
 }
