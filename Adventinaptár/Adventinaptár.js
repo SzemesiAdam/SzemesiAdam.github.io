@@ -19,7 +19,10 @@ if(mounth == 12 && day < 24){
     }
 }
 else{
-    year += 1; // Következő év
+    // Következő év
+    if(mounth == 12 && day > 24){
+        year += 1;
+    }
     const nextAdventStart = new Date(year, 11, 1); // Következő évi advent kezdete
     const diffTime = nextAdventStart - today;
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -27,8 +30,10 @@ else{
 }
 
 function order(item){
-    if(item <= day && day <= 24){
-        document.getElementById(item).style.display = 'block';
+    if(mounth == 12){
+        if(item <= day && day <= 24){
+            document.getElementById(item).style.display = 'block';
+        }
     }
 }
 function secret(){
