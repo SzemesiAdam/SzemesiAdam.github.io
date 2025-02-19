@@ -11,9 +11,6 @@
         <button onclick="order('fooldal')">Főoldal</button>
         <button onclick="order('reg')">Regisztráció</button>
     </nav>
-    <!-- <div class="timerbox">
-        <p></p>
-    </div> -->
     <div class="fcontainer">
         <div class="title">
             <h1>
@@ -57,15 +54,46 @@
                 </tr>
                 <tr>
                     <td>Melyik csapatnak szurkolsz:</td>
-                    <td><input type="radio" name="a" value="Teko" id="teko"> <label for="teko">Teko</label></td>
-                    <td><input type="radio" name="a" value="Sziládi" id="sziladi"> <label for="sziladi">Szilády</label></td>
-                    <td><input type="radio" name="a" value="Dékáni" id="dekani"> <label for="dekani">Dékáni</label></td>
-                    <td><input type="radio" name="a" value="Egyéb" id="egyeb"> <label for="egyeb">Egyéb</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> <input type="radio" name="a" value="Teko" id="teko"></td><td><label for="teko">Teko</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Sziládi" id="sziladi"></td><td><label for="sziladi">Szilády</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Dékáni" id="dekani"></td><td><label for="dekani">Dékáni</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Egyéb" id="egyeb"></td><td><label for="egyeb">Egyéb</label></td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
-                <tr><td colspan="5"><button onclick="bekuld()">Beküld</button></td></tr>
-                <tr><td colspan="5" id="valasz"></td></tr>
-
+                <tr><td colspan="2"><button onclick="bekuld()">Beküld</button></td></tr>
             </table>    
+        </div>
+    </section>
+    <section id="bekuld" style="display: none;">
+        <div class="item">
+            <table>
+                <tr>
+                    <td>Név:</td><td id="nevv"></td>
+                </tr>
+                <tr>
+                    <td>E-mail cm:</td><td id="emailv"></td>
+                </tr>
+                <tr>
+                    <td>Tel. szam:</td><td id="telv"></td>
+                </tr>
+                <tr>
+                    <td>Keddvenc csapat:</td><td id="csv"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Beküldés sikeres.</td>
+                </tr>
+            </table>
         </div>
     </section>
     <footer>

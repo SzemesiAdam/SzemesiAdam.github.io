@@ -17,6 +17,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid yellow;
 }
 nav{
     background-color: green;
@@ -27,6 +28,7 @@ nav{
     justify-content: flex-end;
     position: sticky;
     top: 0%;
+    padding-right: 3vw;
 }
 button{
     height: 4vh;
@@ -34,7 +36,7 @@ button{
     background-color: green;
     color: yellow;
     font-size: large;
-    margin-right: 3vw;
+    padding: 1vh;
 }
 h1{
     display: flex;
@@ -66,7 +68,6 @@ p{
 }
 input{
     line-height: 3vh;
-    margin-bottom: 1vh;
 }
 .fcontainer{
     height: 95vh;
@@ -93,6 +94,7 @@ input{
     margin-left: 20vh;
     margin-right: 20vh;
     margin-top: 10vh;
+    margin-bottom: 3vh;
 }
 .itemv{
     display: flex;
@@ -141,5 +143,5 @@ input{
 }
 td{
     text-align: center;
-    width: 8vw;
+    width: 10vw;
 }
