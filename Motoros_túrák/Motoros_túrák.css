@@ -178,8 +178,9 @@ iframe{
     justify-content: center;
 }
 .kep{
-    width: 50vw;
+    width: 90%;
     border-radius: 20px;
+    margin-bottom: 2vh;
 }
 #e{
     width: 7vw;
