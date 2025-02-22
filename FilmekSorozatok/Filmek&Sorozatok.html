@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek&Sorozatok</title>
+    <link rel="stylesheet" href="Filmek&Sorozatok.css">
+</head>
+<body>
+    <nav>
+        <div class="cim">
+            <h1><span style="color: rgb(0, 217, 255);">Filmek</span> & <span style="color: yellow;">Sorozatok</span></h1>
+        </div>
+        <div class="menu">
+            <button onclick="order('home')">Főoldal</button>
+            <button onclick="order('film')">Filmek</button>
+            <button onclick="order('sorozatok')">Sorozatok</button>
+            <button onclick="order('jatekok')">Játékok</button>
+        </div>
+        <div onclick="order('menu-bar')" class="mobilmenu">
+            <span id="e"></span><span id="e"></span><span id="e"></span>
+        </div>
+    </nav>
+    <section id="menu-bar" style="display: none;">
+        <div class="menupage">
+            <button onclick="order('home')">Főoldal</button>
+            <button onclick="order('film')">Filmek</button>
+            <button onclick="order('sorozatok')">Sorozatok</button>
+            <button onclick="order('jatekok')">Játékok</button>
+        </div>
+    </section>
+    <section id="home" style="display: block;">
+        <div class="box">
+            <div class="felirat">
+                <h2>Üdvözlünk a Filmek&Sorozatok-on!</h2>
+            </div>
+            <div class="item">
+                <p>
+                    Ez az oldal a filmek, sorozatok és játékok kedvelőinek szóló gyűjtőhely, 
+                    ahol könnyedén felfedezheti és rendszerezheti a kedvenc tartalmaidat. 
+                    Akár új megjelenéseket keresel, akár a klasszikusok között böngésznél, 
+                    itt mindent megtalálsz egy helyen. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="film" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: rgb(0, 217, 255);">Filmek</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="filmektabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="sorozatok" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: yellow;">Sorozatok</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="sorozatoktabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Évad szám</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="jatekok" style="display: none;">
+        <div class="box">
+            <div class="felirat">
+                <h2><span style="color: greenyellow;">Játékok</span></h2>
+            </div>
+            <div class="tablazat">
+                <table id="jatekoktabla">
+                    <thead>
+                        <tr>
+                            <th>Név</th>
+                            <th>Ajánlot korosztáj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="Filmek&Sorozatok.js"></script>
+</body>
+</html>

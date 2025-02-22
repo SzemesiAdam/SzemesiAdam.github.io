@@ -1,0 +1,14 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  margin: 0;
+  font-family: system-ui;
+  line-height: 3.5vh;
+  font-size: large;
+  color: white;
+  background-color: #4c4f54;
+}

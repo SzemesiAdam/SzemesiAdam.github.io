@@ -1,0 +1,262 @@
+:root{
+  --hatter: #D2691E; 
+  --footer: #252b2b;
+  --itembg: #4c4f54;
+  --feher: white;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+}
+header{
+  background-image: url("./headerbg.jpg");
+  background-size: cover;
+  height: 92vh;
+  border-bottom: 2px solid #ff7c39;
+  display: flex;
+  align-items: center;
+  background-size: cover; /* A kép teljesen kitölti a teret */
+  background-position: center; /* A kép mindig középen marad */
+}
+footer{
+  height: 10vh;
+  bottom: 0px;
+  background-color: var(--footer);
+  border-top: 3px solid var(--feher);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0px;
+  height: 8vh;
+  background-color: var(--hatter);
+  border-bottom: 3px solid var(--feher);
+}
+button{
+  background-color: var(--hatter);
+  color: var(--feher);
+  border: 0px solid;
+  font-size: 2.5vh;
+  font-weight: bold;
+  height: 8vh;
+  width: 120px;
+}
+button:hover{
+  background-color: #e9b48e;
+}
+p{
+  padding: 1.5vh;
+}
+h2{
+  background-color: var(--hatter);
+  padding: 1.5vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 40vw;
+  text-align: center;
+}
+h3{
+  margin-left: 5vw;
+  padding: 0.5vh;
+  text-align: center;
+  border: 3px solid var(--hatter);
+  border-top-right-radius: 20px;
+  width: 10vw;
+}
+p, ul, ol{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+ul, ol{
+  padding: 0.5vw;
+  margin-left: 10vw;
+}
+a{
+  color: var(--hatter);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+table, th, td {
+  border: 2px solid var(--feher);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+}
+td{
+  padding: 1vh;
+}
+/* class */
+.title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
+  margin-bottom: 20vh;
+  margin-left: 5vw;
+  font-size:6vh;
+  color: var(--hatter);
+  -webkit-text-stroke: 3px var(--feher);
+}
+.title h4{
+  color: var(--feher);
+  -webkit-text-stroke: 1px black;
+  margin-top: 7vh;
+  font-size:6vh;
+}
+.fooldalbox{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.box{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 2vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  background-color: var(--footer);
+  box-shadow: 0 4px 8px 0 var(--hatter), 0 6px 20px 0 var(--hatter);
+  border-radius: 20px;
+}
+.terkep{
+  display: flex;
+  justify-content: center;
+}
+iframe{
+  width: 50vw; 
+  height: 50vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: 5px solid var(--footer); 
+  border-radius: 20px; 
+}
+.item{
+  margin: 2vh;
+  margin-top: 0px;
+  padding: 0vh;
+  background-color: var(--itembg);
+  border: 2px solid var(--hatter);
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+}
+.mobilmenu{
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 15vw;
+  height: 8vh;
+  margin-right: 2vw;
+  transition: 0.8s;
+}
+.menupage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  background-color: var(--hatter);
+}
+.boxkep{
+  display: flex;
+  justify-content: center;
+}
+.kep{
+  width: 85%;
+  border-radius: 20px;
+  margin-bottom: 2vh;
+}
+/* id */
+#e{
+  width: 40px;
+  margin: 0.6vh;
+  border: 2.5px solid var(--feher);   
+}
+#fooldalboxmeret{
+  height: auto;
+}
+/* görgő */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--footer);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--hatter);
+  border-radius: 20px;
+} 
+::-webkit-scrollbar-thumb:hover{
+  border: 1px solid var(--feher);
+}
+
+@media only screen and (max-width: 600px){
+  .menubar{
+      display: none;
+  }
+  .mobilmenu{
+      visibility: visible;
+  } 
+}
+@media only screen and (max-width: 1050px){
+  h2{
+      width: auto;
+  }
+  h3{
+      width: 20vh;
+  }
+  h1{
+      line-height: 10vh;
+      font-size: 10vh;
+  }
+  h4{
+      line-height: 5vh;
+  }
+  ul,ol{
+    margin-left: 20vw;
+  }
+  p{
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+  .box{
+      margin: 0px;
+      border-radius: 0%;
+      padding: 0.5vh;
+      box-shadow: 0 0px 0px 0 var(--hatter), 0 0px 0px 0 var(--hatter);
+  }
+  #fooldalboxmeret{
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .item{
+      margin-top: 0px;
+      border-top-right-radius: 0%;
+  }
+  iframe{
+      width: 100vw;
+      border-radius: 0%;
+      border: 0px;
+      border-top: 4px solid #252b2b;
+      border-bottom: 4px solid #252b2b;
+  }
+}
+@media only screen and (max-width: 400px){
+    table{
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+    }
+}

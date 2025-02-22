@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_webpage.css">
+    <title>Szemesi Ádám</title>
+    <link rel="shortcut icon" href="k/mando_icon.png">
+</head>
+<body>
+    <!--menu; cim; könyvjelzök-->
+    <nav>
+        <div class="menubar">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerj meg</button>
+            <button onclick="order('referencia')">Referenciamunkák</button>
+            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
+        </div>
+        <div onclick="order('menu')" class="mobilmenu">
+            <span id="e"></span><span id="e"></span><span id="e"></span>
+        </div>
+    </nav>
+    <section id="menu" style="display: none;">
+        <div class="menupage">
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerj meg</button>
+            <button onclick="order('referencia')">Referenciamunkák</button>
+            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
+        </div>
+    </section>
+    <!--főoldal-->
+    <section id="fooldal" style="display: block;">
+        <div class="title">
+            <h1>Köszöntelek a weboldalamon!</h1>
+        </div>
+        <div class="menu">
+            <div id="fooldalkepkbox">
+                <img src="k/baja-3.jpg" class="fk">
+            </div>
+            <div id="fooldalitem">
+                <div class="item">
+                    <p>
+                        Azért készitettem ezt a weboldalt hogy bemutasam magam, a 
+                        projektjeimet, végzetségeimet és a tulajdonságaimat. 
+                        Böngészd végig a weboldalt és remélem megtudsz pár érdekes 
+                        információt rólam. 
+                        <br>
+                        A képek vagy egyéb fájlok letöltése szigorúan tilos kérem ne tedd!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ismerj meg-->
+    <section id="ismerjmeg" style="display: none;">
+        <div class="title">
+            <h1>Ismerj meg</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    Tudjon meg rólam többet. Nagyon sok hobbim van mert szinte minden 
+                    érdekel ami technikai vagy inforatikai műfaj. 
+                    Ezentúl leírom a végzetségeimet hogy milyen engedélyekkel 
+                    rendelkezem és, hogy milyen terveim vannak a jövőre.
+                </p>
+            </div>
+            <div class="menu">
+                <div onclick="order('tulajdonsagaim')" class="card">
+                        <h2>Tulajdonságaim</h2>
+                        <img src="k/tulajdonsag.jpg" class="k">
+                </div>
+                <div onclick="order('hobik')" class="card">
+                        <h2>Hobbik</h2>
+                        <img src="k/hobbi.jpg" class="k">
+                </div>
+                <div onclick="order('vegzetsegeim')" class="card">
+                        <h2>Végzetségeim</h2>
+                        <img src="k/végzetségek.jpeg" class="k">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--tulajdonság-->
+    <section id="tulajdonsagaim" style="display: none;">
+        <div class="title">
+            <h1>Tulajdonságaim</h1>
+        </div>
+        <div class="menu">
+            <div id="fooldalkepbox">
+                <img src="k/diaknap24-95.jpg" class="ismerjmeg">
+            </div>
+            <div id="ismerjmegitem">
+                <div class="item">
+                    <p>
+                        Szerintem nyitott és barátságos vagyok. A legtöbb emberrel jól kijövök könyen 
+                        és gyorsan barátkozom így sok barátom van. Hűséges vagyok a barátaimhoz, és 
+                        cserébe ugyanezt a hűséget várom el. Szeretek csapatban dolgozni sok ilyen iskolai 
+                        projektben vettem már részét. Jó hallgatónak és szervezőnek tartom magam, 
+                        általában nagy szerpet válalok a projektekben és az osztályom életében. 
+                        <br>
+                        Igazán optimista vagyok. Általában próbálok pozitívan gondolkodni számomra 
+                        a problémák leküzdése a legfontosabb.
+                        <br> 
+                        Összességében elégedett vagyok magammal. A barátaim szerint a legjobb 
+                        tulajdonságom a humorérzékem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--hobbik-->
+    <section id="hobik" style="display: none;">
+        <div class="title">
+            <h1>Hobbik</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                Hobbikból igazán bövelkedem mert szinte minden érdekel az rc autok építésétől 
+                a buvárkodáson át egészen motorozásig. Eddig nagy részükben volt szerenécsém kiprobálni 
+                magam, amrelyekben pedig még nem ott arra törekszem,hogy egy nap azon a területen 
+                is kiprobálhasam magam. Mivel tényleg rengeteg minden érdekel így most a teljeég 
+                igenye nélkül bemutatom a föbb hobbijaimat.
+            </div>
+            <div class="menu">
+                <a href="#sport"><div>
+                    <img src="k/target.gif" title="Sport" class="link">
+                </div></a>
+                <a href="#gaming"><div>
+                    <img src="k/support.gif" title="Számítógépes játékok" class="link">
+                </div></a>
+                <a href="#develop"><div>
+                    <img src="k/computer.gif" title="Programozás, 3D tervezés" class="link">
+                </div></a>
+                <a href="#video"><div>
+                    <img src="k/video.gif" title="Képszerkesztés, videóvágás" class="link">
+                </div></a>
+            </div>
+            <a name="sport"></a>
+            <br>
+            <br>
+            <div>
+                <h2>Sport:</h2>
+            </div>
+            <div class="menu">
+                <div id="fooldalkepkbox">
+                    <img src="k/diaknap24-23.jpg" id="hobbiping">
+                </div>
+                <div id="fooldalitem">
+                    <div class="item">
+                        <p>
+                            A középiskolában nagyon sokat pingponoztam az osztálytársaimmal és a 
+                            barátaimmal. Volt, hogy két fős csapatban a diáknapon is indultunk.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div id="fooldalitem">
+                    <div class="item">
+                        <p>
+                            Gyerekkorom ota apukám vitt motorozni magával, ő az aki meg szerettette 
+                            velem ezt a sportot. Most készülök letteni az A2-es motoros jogosítványt, 
+                            így nagyon remélem, hogy hamarosan utasból vezető lehetek. 
+                        </p>
+                    </div>
+                </div>
+                <div id="fooldalkepkbox">
+                    <img src="k/IMG_20200530_200240.jpg" id="hobbimotor">
+                </div>
+            </div>
+            <a name="gaming"></a>
+            <br>
+            <br>
+            <div>
+                <h2>Számítógépes játékok:</h2>
+            </div>
+            <div class="menu">
+                <div id="fooldalkepkbox">
+                    <img src="k/How_to_Improve_Your_Gaming_PC_Performance-Thumb.webp" id="hobbimotor">
+                </div>
+                <div id="fooldalitem">
+                    <div class="item">
+                        <p>
+                            Hetente egyszer-kétszer össze ülönk a barátaimmal játszani ilyenkor egy 
+                            megbeszélt időpontban felhívjuk egymást Discordon és közben játszunk 
+                            valamivel közösen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a name="develop"></a>
+            <br>
+            <br>
+            <div>
+                <h2>Programozás, 3D tervezés:</h2>
+            </div>
+            <div class="menu">
+                <div onclick="order('weboldal')" class="card">
+                        <h2>Weboldal készítés</h2>
+                        <img src="k/weboldal.jpg" class="k">
+                </div>
+                <div onclick="order('programozas')" class="card">
+                    <h2>Progarmozás</h2>
+                    <img src="k/programozás.jpg" class="k">
+                </div>
+                <div onclick="order('3d')" class="card">
+                    <h2>3D modelezés</h2>
+                    <img src="k/3d.webp" class="k">
+                </div>
+            </div>
+            <a name="video"></a>
+            <br>
+            <br>
+            <div>
+                <h2>Képszerkesztés, videó vágás:</h2>
+            </div>
+            <div class="menu">
+                <div onclick="order('kepszerkesztes')" class="card">
+                        <h2>Képszerkesztés</h2>
+                        <img src="k/kepszerkesztes.jpg" class="k">
+                </div>
+                <div onclick="order('videovagas')" class="card">
+                        <h2>Videovágás</h2>
+                        <img src="k/videovagas.jpg" class="k">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--végzetségeim-->
+    <section id="vegzetsegeim" style="display: none;">
+        <div class="title">
+            <h1>Végzetségeim</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <h2>Általános iskolai tanyulmányok:</h2>
+                <p>
+                    Ezeket a lakhelyemhez közeli iskolában a Kiskunhalai 
+                    <a href="https://sztjozsef-kkhalas.hu/" target="_blank" style="color: aqua;">
+                        Szent József Katolikus Általános Iskola és Óvoda-ban</a> szereztem meg. 
+                </p>
+                <p>
+                    Megszerezhető végzetségek:
+                    (<span style="color: greenyellow; font-size: small;">Megszerzett végzetség</span>/
+                    <span style="color: red; font-size: small;">Megszerzendő végzetség</span>)
+                </p>
+                <ul id="vegzetseg">
+                    <li style="color: greenyellow;">Általános iskolai bizonyítvány</li>
+                </ul>
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/iskolakezd.png" class="fotokfekvo">
+            </div>
+            <div class="item">
+                <h2>Középiskolai tanyulmányok:</h2>
+                <p>
+                    Középiskulába a <a href="https://www.teko.hu/" target="_blank" style="color: yellow;">
+                        II. Rákóczi Ferenc Katolikus Gimnázium és Technikum-ba</a> jártam informatikai 
+                        technikum tagozatra és ott is a második év után szoftverfejlesztő és tesztelő 
+                        technikus szakírányon tanultam. 
+                </p>
+                <p>
+                    Megszerezhető végzetségek:
+                    (<span style="color: greenyellow; font-size: small;">Megszerzett végzetség</span>/
+                    <span style="color: red; font-size: small;">Megszerzendő végzetség</span>)
+                </p>
+                <ul id="vegzetseg">
+                    <li style="color: red;">Éretségi</li>
+                    <li style="color: red;">Informatikai technikusi végzetség</li>
+                    <li style="color: greenyellow;">Cisco bizonyitvány</li>
+                    <li style="color: greenyellow;">Gépíró bizonyitvány</li>
+                </ul>
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/HEADER.jpg" class="fotokfekvo">
+            </div>
+        </div>
+    </section>
+    <!--referencia-->
+    <section id="referencia" style="display: none;">
+        <div class="title">
+            <h1>Referenciamunkák</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    Elég sok dolog felkelti az érdeklődésem, így probálom magam minél 
+                    több területen kiprobálni. Gyerek koromtól érdekelt a képszerkesztés 
+                    és a videovágás.
+                    <br><span style="color: red;">!A képeimet és videoimat amelyek az 
+                    oldalon találhatok kérem ne töltsék le vagy használják fel!</span><br> 
+                    A programozást  és a weboldalkészítést a középiskolában tanultam 
+                    meg de nagyon sok weboldalt készitettem önszorgalomból, 
+                    mint például ezt is. Iskolámban a programozási nyelvek közül 
+                    a Phytont, a C#, a Java Scriptet és a HTML-t tanultuk meg.
+                </p>
+            </div>
+            <div class="menu">
+                <div onclick="order('kepszerkesztes')" class="card">
+                        <h2>Képszerkesztés</h2>
+                        <img src="k/kepszerkesztes.jpg" class="k">
+                </div>
+                <div onclick="order('videovagas')" class="card">
+                        <h2>Videovágás</h2>
+                        <img src="k/videovagas.jpg" class="k">
+                </div>
+                <div onclick="order('weboldal')" class="card">
+                        <h2>Weboldal készítés</h2>
+                        <img src="k/weboldal.jpg" class="k">
+                </div>
+                <div onclick="order('programozas')" class="card">
+                    <h2>Programozás</h2>
+                    <img src="k/programozás.jpg" class="k">
+                </div>
+                <div onclick="order('3d')" class="card">
+                    <h2>3D modellezés</h2>
+                    <img src="k/3d.webp" class="k">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--kepszerkesztes-->
+    <section id="kepszerkesztes" style="display: none;">
+        <div class="title">
+            <h1>Képszerkesztés</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    Körülbelül két éve kezdtem bele a képszerkesztésbe azóta ha járunk valahol 
+                    mindig igyekezek készíteni pár képet hogy utánna ha haza értünk legyen min gyakorolni. 
+                    Legtöbbször tájképet vagy protré fotót készitek. 
+                    A szerkesztő programok közül az Adobe Lightroom Classic-ot használom.
+                </p>
+            </div>
+            <h2>Tájképek:</h2>
+            <div class="menu">
+                <div>
+                    <img src="k/baja-5.jpg" class="fotok">
+                </div>
+                <div>
+                    <img src="k/baja-6.jpg" class="fotok">
+                </div>
+                <div>
+                    <img src="k/tanösvény-9.jpg" class="fotok">
+                </div>
+            </div>
+            <h2>Portré fotók:</h2>
+            <div class="menu">
+                <div>
+                    <img src="k/baja-2.jpg" class="fotok">
+                </div>
+                <div>
+                    <img src="k/baja-3.jpg" class="fotok">
+                </div>
+                <div>
+                    <img src="k/baja-4.jpg" class="fotok">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--videovagas-->
+    <section id="videovagas" style="display: none;">
+        <div class="title">
+            <h1>Videovágás</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    Középiskolás koromban tagja lettem az iskola studiós csapatának így hamar megtanultam 
+                    a hangosítás alapjait. A videóvágással egy 9. osztályos projerkt munka alkalmával 
+                    kellett foglalkoznunk, így az egyik projekt társam és barátom mutata meg előszőr, 
+                    hogy ő milyen programot használ. A projekt munka után sem hagydtam abba a videó vágást. 
+                    Később egy iskolai öko projekt alkalmával használtam fel tudásom de akkor már egy 
+                    másik program használatával. 
+                    <br>
+                    Utoljára az Adobe Premiere Pro 2020-at használtam.
+                </p>
+            </div>
+            <h2>Videopad:</h2>
+            <div class="video">
+                <video width="70%" height="80%" controls>
+                    <source src="k/Rex visszatér.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h2>Adobe Premiere Pro 2020:</h2>
+            <div class="video">
+                <video width="70%" height="80%" controls>
+                    <source src="k/Nerra.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <!--weboldal-->
+    <section id="weboldal" style="display: none;">
+        <div class="title">
+            <h1>Weboldal készítés</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    A webprogramozást középiskolában kezdtem el tanulni heti 1-2 órában. 
+                    Már az elején megtetszet a programozás ezen fajtája éppen ezért önszorgalomból 
+                    készítettem saját magamnak weboldalakat. Az órai feladatokat is álltalában 
+                    részletesebbre készítettem mint a többiek. Mindig probáltam valami újat beletenni, 
+                    hogy folyamatosan tanuljak.
+                    <br>
+                    Elérhetővé teszem itt a weboldalaim egy részét. Ez első két oldal még nagyon régen 
+                    készült szóval azok nem responsive így csak számítógépen érdemes megtekinteni őket.
+                </p>
+            </div>
+            <div class="menu">
+                <a href="https://szemesiadam.github.io/Star%20Wars/Star_Wars.html" target="_blank"><div class="card">
+                    <h2>Star Wars</h2>
+                    <img src="k/Star-wars-logo-new-tall.webp" class="k">
+                </div></a>
+                <a href="https://szemesiadam.github.io/K.T._R.C/F%C5%91oldal.html" target="_blank"><div class="card">
+                    <h2>K.T.R.C.</h2>
+                    <img src="k/60367bc0ab994f000114b278-image_5fd326de.jpeg" class="k" style="width: 50%;">
+                </div></a>
+                <a href="https://szemesiadam.github.io/Ny%C3%A1ri%20sz%C3%BCnet/szunet.html" target="_blank"><div class="card">
+                    <h2>Nyári Szünet</h2>
+                    <img src="k/szegedi-repulonapok-legiparade-1.jpg" class="k">
+                </div></a>
+                <a href="https://szemesiadam.github.io/FilmekSorozatok/Filmek&Sorozatok.html" target="_blank"><div class="card">
+                    <h2>Filmek & Sorozatok</h2>
+                    <img src="k/csapo.png" class="k" style="width: 60%;">
+                </div></a>
+                <a href="https://szemesiadam.github.io/Adventinaptár/Adventinaptár.html" target="_blank"><div class="card">
+                    <h2>Adventi naptár</h2>
+                    <img src="k/35378147_2706679_016f81d6d81850343231bcc4e15eba62_wm.jpg" class="k">
+                </div></a>
+                <a href="https://szemesiadam.github.io/Motoros_túrák/Motoros_túrák.html" target="_blank"><div class="card">
+                    <h2>Motoros túrák</h2>
+                    <img src="k/iconweb.jpg" class="k" style="width: 50%;">
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <!--programozás-->
+    <section id="programozas" style="display: none;">
+        <div class="title">
+            <h1>Programozás</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    A programozást a középiskolába sajátitottam el. Mivel 10. osztálytól kezdődően 
+                    szoftver fejlesztő szakon tanultam elég magas óra számban tanultam a különböző 
+                    nyelveket. Phytont, C#-ot, HTML-t, Java Scriptet is tanultunk. Phyton nyelven 
+                    oroszrulettet készítetünk egyik barátommal azután pedig egy titkosító programot 
+                    C# nyelven. Nagyon sok projektmunkában vettem részt és sokat dolgoztam együtt másokkal. 
+                </p>
+            </div>
+            <h2>Enigma</h2>
+            <div class="item">
+                <p>
+                    Most azt  programot fogom bemutatni amit az említett barátommal közösen 
+                    készítettünk el. Az Enigma egy egyszerű kodoló program amely a karaktereket 
+                    egy előre bekért szám alapján "véletlen" random számok csoportjaival cseréli ki. 
+                    Egy fejlesztés után már arra is képes lett hogy akár txt fáljból is képes beolvasni 
+                    a kodolni vagy éppen dekodolni kívánt szöveget és képes azt a művelet után egy 
+                    fáljba vissza is írni. Elláttuk jelszóval és "bolond biztos" ellenőrző rendszerel is. 
+                </p>
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e1.png" class="enigmafoto">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e2.png" class="enigmafoto">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e3.png" class="enigmafoto">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e4.png" class="enigmafoto">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e5.png" class="enigmafoto">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/e6.png" class="enigmafoto">
+            </div>
+        </div>
+    </section>
+    <!--3d-->
+    <section id="3d" style="display: none;">
+        <div class="title">
+            <h1>3D modelezés</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <p>
+                    A 3D modellezéssel még egy középiskolai táborom során ismerkedtem meg. 
+                    Kétszer is voltam a <a href="https://nje.hu/" target="_blank" style="color: orange;">Neumann János Egyetem</a>
+                    nyári középiskolásoknak szóló táborában ahol megismerkedhetünk az egyetemmel 
+                    és az általa nyujtott lehetőségekkel. Második alkalommal a "Mindent a 3D-ről" 
+                    tematikán vettem részt és akkor tanították meg a 3D tervezés éa nyomtatás alapjait. 
+                    Nagyon megtetszet, hogy bármit megtervezhetek magamnak így a tábor után sem hagytam 
+                    abba a tervezést. Eddig még kevés projektem készült el de azokat itt lejebb bemutatom.
+                    Eddig még csak az Onshape online programmal volt szerencsém megismerkedni. 
+                </p>
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/os1.png" class="fotokfekvo">
+            </div>
+            <div class="fotofekvobox">
+                <img src="k/os2.png" class="fotokfekvo">
+            </div>
+        </div>
+    </section>
+    <!--elérhetőségek-->
+    <section id="elerhetosegek" style="display: none;">
+        <div class="title">
+            <h1>Elérhetőségek</h1>
+        </div>
+        <div class="menu">
+            <div id="elerhetoseg" >
+                <div>
+                    <h3>Email:</h3>
+                    <p>adm.szemsi@gmil.com</p>
+                    <br>
+                    <h3>Tel. szám:</h3>
+                    <p>+36 70...</p>
+                </div>
+            </div>
+            <div class="boxicon">
+                <div>
+                    <a href="https://www.facebook.com/adam.szemesi.7?locale=hu_HU" target="_blank"><img src="k/facebook.png" class="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/adamszemesi/" target="_blank"><img src="k/social.png" class="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@szemesi.adam?lang=hu-HU" target="_blank"><img src="k/tik-tok.png" class="icon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="my_webpage.js"></script>
+</body>
+</html>

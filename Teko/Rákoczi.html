@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rákoczi kupa 2025</title>
+    <link rel="stylesheet" href="Rákoczi.css">
+</head>
+<body>
+    <nav>
+        <button onclick="order('fooldal')">Főoldal</button>
+        <button onclick="order('reg')">Regisztráció</button>
+    </nav>
+    <div class="fcontainer">
+        <div class="title">
+            <h1>
+                Rákóczi Kupa 2025
+                <br>
+                Szurkolj te is a Tekosoknak!
+            </h1>
+        </div>
+    </div>
+    <section id="fooldal" style="display: block;">
+        <div class="container">
+            <div class="box">
+                <h2>A Rákoczi Kupa</h2>
+                <p>
+                    A Rákóczi Kupa története egészen 1973-ig nyúlik vissza. Ekkor készült el a kiskunhalasi II. Rákóczi Ferenc Mezőgazdasági Szakközépiskola 36×18-as tornaterme, így adott volt a helyszín kispályás labdarúgáshoz. Az iskola akkori igazgatója, Nemes Márton – különösen sportszerető ember lévén – támogatta egy kétnapos kispályás labdarúgókupa megrendezésének gondolatát. A szervezés oroszlánrészét Zag László (testnevelő tanár, kollégiumvezető) és Mészáros Imre (testnevelő tanár, az iskolai sportkör vezetője) vállalta fel. Előbbi, mint a torna elnökhelyettese (elnöke a mindenkori igazgató), utóbbi pedig mint a titkára akkor és utána még jó húsz évig. A torna a Rákóczi Kupa elnevezést kapta. A rendező iskola csapatán kívül az ország II. Rákóczi Ferenc nevét viselő középiskolái közül a vásárosnaményi és a sárospataki kapott meghívást, a helyi Szilády Áron Gimnázium mellett. A kiírás szerint az a csapat nyerheti el végleg a kupát, amelyik ötször diadalmaskodik, vagy teszi ezt három egymást követő évben.
+                </p>
+            </div>
+            <div class="boxk">
+                <img src="IMG_9466.jpg" class="k">
+            </div>
+        </div>
+    </section>
+    <section id="reg" style="display: none;">
+        <div class="item">
+            <h3>Regisztrálj a nyeremény játékra!</h3>
+            <p>
+                Regisztrálj, és nyerj értékes nyereményeket vagy akár egy bérletet a Rákóczi Kupára, hogy te is önfeledten szurkolhass kedvenc csapatodnak! Regisztráció után bekerülhetsz te is a szerencsés nyertesek közé. A sorsolás február 2-án lesz, az eredményeket pedig azonnal közzétesszük a honlapon, és másnap akár már át is veheted Ibolya néninél a portán.
+            </p>
+            <h2>Légy te a szerencsés nyertes és szurkolj velünk egész hétvégén!</h2>
+        </div>
+        <div class="itemv">
+            <table>
+                <tr>
+                    <td>Név:</td><td><input type="text" id="nev"></td>
+                </tr>
+                <tr>
+                    <td>E-mail cím:</td><td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Tel. szám:</td><td><input type="text" id="tel"></td>
+                </tr>
+                <tr>
+                    <td>Melyik csapatnak szurkolsz:</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> <input type="radio" name="a" value="Teko" id="teko"></td><td><label for="teko">Teko</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Sziládi" id="sziladi"></td><td><label for="sziladi">Szilády</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Dékáni" id="dekani"></td><td><label for="dekani">Dékáni</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="a" value="Egyéb" id="egyeb"></td><td><label for="egyeb">Egyéb</label></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><button onclick="bekuld()">Beküld</button></td></tr>
+            </table>    
+        </div>
+    </section>
+    <section id="bekuld" style="display: none;">
+        <div class="item">
+            <table>
+                <tr>
+                    <td>Név:</td><td id="nevv"></td>
+                </tr>
+                <tr>
+                    <td>E-mail cm:</td><td id="emailv"></td>
+                </tr>
+                <tr>
+                    <td>Tel. szam:</td><td id="telv"></td>
+                </tr>
+                <tr>
+                    <td>Keddvenc csapat:</td><td id="csv"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Beküldés sikeres.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <a href="https://www.teko.hu/" target="_blank">Forrás: Teko</a>
+        </p>
+    </footer>
+    <script src="Rákoczi.js"></script>
+</body>
+</html>
