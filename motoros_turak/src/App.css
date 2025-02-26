@@ -10,7 +10,7 @@
   margin: 0%;
 }
 header{
-  background-image: url("public/headerbg.jpg");
+  background-image: url("/headerbg.jpg");
   background-size: cover;
   height: 100vh;
   border-bottom: 2px solid #ff7c39;
