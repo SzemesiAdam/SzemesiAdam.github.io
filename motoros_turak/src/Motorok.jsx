@@ -26,7 +26,9 @@ function Motorok(){
             <section id="motorok" style={{display: "none"}}>
                 {tart.map((item) => (
                     <div key={item.nev} className="box">
-                        <h2>{item.nev}</h2>
+                        <title>
+                            <h2>{item.nev}</h2>
+                        </title>
                         <div className="item">
                             {item.szoveg}
                             <table>

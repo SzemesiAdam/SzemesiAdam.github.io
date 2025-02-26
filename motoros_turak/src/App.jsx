@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useRef, useState } from 'react'
 import './App.css'
 import Fooldal from './Fooldal.jsx'
 import Turak from './Turak.jsx'
@@ -7,6 +7,14 @@ import Motorok from './Motorok.jsx'
 
 let elozolap = 0;
 let menuallas = false;
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 650) { // Ha 50px-nél többet görgetsz
+        document.getElementById("navbar").classList.add("scrolled");
+    } else {
+        document.getElementById("navbar").classList.remove("scrolled");
+    }
+  });
 
 function App() {
   //js függvények helye
@@ -48,7 +56,7 @@ function App() {
 
   return (
     <>
-      <nav>
+      <nav id='navbar'>
         <div className="menubar">
             <button onClick={() => order("fooldal")}>Főoldal</button>
             <button onClick={() => order("turak")}>Túrák</button>
@@ -69,10 +77,10 @@ function App() {
         </div>
     </section>
     <header>
-            <div className="title">
-                <h1>Motoros túrák</h1>
-                <h4>{alcim}</h4>
-            </div>
+        <div className="title">
+            <h1>Motoros túrák</h1>
+            <h4>{alcim}</h4>
+        </div>
     </header>
     <Fooldal/>
     <Turak/>

@@ -10,14 +10,15 @@
   margin: 0%;
 }
 header{
-  background-image: url("./headerbg.jpg");
+  background-image: url("public/headerbg.jpg");
   background-size: cover;
-  height: 92vh;
+  height: 100vh;
   border-bottom: 2px solid #ff7c39;
   display: flex;
   align-items: center;
   background-size: cover; /* A kép teljesen kitölti a teret */
   background-position: center; /* A kép mindig középen marad */
+  z-index: 1;
 }
 footer{
   height: 10vh;
@@ -32,18 +33,20 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  top: 0px;
-  height: 8vh;
-  background-color: var(--hatter);
-  border-bottom: 3px solid var(--feher);
+  width: 100%;
+  height: 6.5vh;
+  position: fixed;
+  z-index: 2;
 }
 button{
   background-color: var(--hatter);
   color: var(--feher);
-  border: 0px solid;
+  border: 2px solid var(--feher);
+  border-radius: 20px;
   font-size: 2.5vh;
   font-weight: bold;
-  height: 8vh;
+  margin-left: 2vh;
+  height: 5vh;
   width: 120px;
 }
 button:hover{
@@ -52,16 +55,18 @@ button:hover{
 p{
   padding: 1.5vh;
 }
-h2{
+title{
   background-color: var(--hatter);
   padding: 1.5vh;
-  margin-top: 2vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
+  margin: 2vh;
+  margin-bottom: 0vh;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  width: 40vw;
-  text-align: center;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 h3{
   margin-left: 5vw;
@@ -70,6 +75,14 @@ h3{
   border: 3px solid var(--hatter);
   border-top-right-radius: 20px;
   width: 10vw;
+}
+h5{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vh;
 }
 p, ul, ol{
   margin-left: 5vw;
@@ -103,8 +116,8 @@ td{
   align-items: center;
   flex-direction: column;
   height: 20vh;
-  margin-bottom: 20vh;
-  margin-left: 5vw;
+  margin-bottom: 35vh;
+  margin-left: 2vw;
   font-size:6vh;
   color: var(--hatter);
   -webkit-text-stroke: 3px var(--feher);
@@ -145,11 +158,18 @@ iframe{
 .item{
   margin: 2vh;
   margin-top: 0px;
-  padding: 0vh;
   background-color: var(--itembg);
   border: 2px solid var(--hatter);
   border-radius: 20px;
   border-top-left-radius: 0px;
+  padding-bottom: 0vh;
+}
+.itemheader{
+  width: 100%;
+  height: 31vh;
+  border-bottom: 5px solid var(--hatter);
+  border-radius: 20px;
+  border-top-left-radius: 0%;
 }
 .mobilmenu{
   visibility: hidden;
@@ -167,8 +187,13 @@ iframe{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 92vh;
+  height: 100vh;
   background-color: var(--hatter);
+}
+.icon{
+  width: 35px;
+  margin-left: 10vh;
+  transition: 0.8s;
 }
 .boxkep{
   display: flex;
@@ -179,11 +204,17 @@ iframe{
   border-radius: 20px;
   margin-bottom: 2vh;
 }
+.scrolled {
+  background-color: var(--hatter);
+  border-bottom: 3px solid var(--feher);
+  transition: 0.8s ease-in-out;
+}
 /* id */
 #e{
   width: 40px;
   margin: 0.6vh;
-  border: 2.5px solid var(--feher);   
+  border: 2.5px solid var(--feher);
+  border-radius: 20px;   
 }
 #fooldalboxmeret{
   height: auto;
@@ -201,27 +232,37 @@ iframe{
   border: 1px solid var(--feher);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   .menubar{
       display: none;
   }
   .mobilmenu{
       visibility: visible;
   } 
+  .icon{
+    margin-left: 4vh;
+  }
 }
 @media only screen and (max-width: 1050px){
-  h2{
+  h1{
+    line-height: 10vh;
+    font-size: 10vh;
+  }
+  title{
       width: auto;
   }
   h3{
       width: 20vh;
   }
-  h1{
-      line-height: 10vh;
-      font-size: 10vh;
+  h5{
+    font-size: 5vh;
+    background-color: var(--footer);
   }
   h4{
       line-height: 5vh;
+  }
+  button{
+    margin-bottom: 2vh;
   }
   ul,ol{
     margin-left: 20vw;

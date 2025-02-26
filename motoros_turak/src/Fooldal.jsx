@@ -4,7 +4,9 @@ function Fooldal(){
         <section id="fooldal">
             <div className="fooldalbox">
                 <div className="box" id="fooldalboxmeret">
-                    <h2>Üdvözöllek a motoros túrák világában!</h2>
+                    <title>
+                        <h2>Üdvözölek a motoros túrák világában!</h2>
+                    </title>
                     <div className="item">
                         <p>
                             Ez az oldal azoknak készült, akik szenvedélyesen 
