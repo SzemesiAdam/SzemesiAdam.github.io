@@ -11,7 +11,7 @@ let menuallas = false;
 
 window.addEventListener("scroll", function() {
   let navbar = document.getElementById("navbar");
-  if (window.scrollY > 700) { // Ha 50px-nél többet görgetsz
+  if (window.scrollY > 650) { // Ha 50px-nél többet görgetsz
       navbar.classList.add("scrolled");
   } else {
       navbar.classList.remove("scrolled");
@@ -21,7 +21,7 @@ window.addEventListener("scroll", function() {
 function App() {
   //js függvények helye
   const oldalak = ["mega_girl", "profil", "site", "menu"];
-  const alcimek = ["Mega_girl", "Ph_video", "Ph_site"];
+  const alcimek = ["Mega_girl", "Ph_profil", "Ph_site"];
   const [alcim, setAlcim] = useState("Mega_girl");
 
   function order(item){
@@ -78,7 +78,7 @@ function App() {
       </section>
       <header>
         <div className='title'>
-          <h1>Links_x</h1>
+          <h1>Girls Links</h1>
           <h4>{alcim}</h4>
         </div>
       </header>

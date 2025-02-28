@@ -21,7 +21,7 @@
   margin: 0%;
 }
 header{
-  background-image: url("./headerbg.jpg");
+  background-image: url("/headerbg.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -181,7 +181,8 @@ h4{
 #e{
   width: 40px;
   margin: 0.6vh;
-  border: 2.5px solid var(--sarga );   
+  border: 2.5px solid var(--sarga );
+  border-radius: 20px; 
 }
 /* görgő */
 ::-webkit-scrollbar {
@@ -203,10 +204,23 @@ h4{
   .mobilmenu{
       visibility: visible;
   } 
-}
-@media only screen and (max-width: 680px){
+  header{
+    background-image: url("/headerbgs.jpg");
+  }
+  .title{
+    width: 100%;
+    height: 80%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 8vh;
+  }
   h1{
-    font-size: 10vh;
+    font-size: 7vh;
+  }
+  h4{
+    font-size: 5vh;
   }
   .markbox{
     height: auto;
