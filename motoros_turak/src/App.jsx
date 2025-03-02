@@ -30,7 +30,7 @@ function App() {
         else{
             document.getElementById(oldalak[i]).style.display = "block";
             setAlcim(alcimek[i]);
-            if(window.innerWidth <= 600){
+            if(window.innerWidth <= 700){
                 if(item != "menu"){elozolap = i}
                 if(menuallas == false){
                     menuallas = true; 

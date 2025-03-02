@@ -74,7 +74,7 @@ h3{
   text-align: center;
   border: 3px solid var(--hatter);
   border-top-right-radius: 20px;
-  width: 10vw;
+  width: 20vh;
 }
 h5{
   width: 100%;
@@ -171,6 +171,22 @@ iframe{
   border-radius: 20px;
   border-top-left-radius: 0%;
 }
+.napokbox{
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+}
+.napokbox button{
+  border: 2px solid #252b2b;
+  border-radius: 10px;
+  font-weight: normal;
+}
+.napokbox button:focus{
+  border: 2px solid var(--feher); 
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.1); /* 20%-kal megnöveli a méretet */
+  z-index: 10;
+}
 .mobilmenu{
   visibility: hidden;
   display: flex;
@@ -212,7 +228,7 @@ iframe{
 /* id */
 #e{
   width: 40px;
-  margin: 0.6vh;
+  margin: 5px;
   border: 2.5px solid var(--feher);
   border-radius: 20px;   
 }
@@ -239,11 +255,14 @@ iframe{
   .mobilmenu{
       visibility: visible;
   } 
+  button{
+    margin-bottom: 2vh;
+  }
   .icon{
     margin-left: 4vh;
   }
 }
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1000px){
   h1{
     line-height: 10vh;
     font-size: 10vh;
@@ -251,18 +270,12 @@ iframe{
   title{
       width: auto;
   }
-  h3{
-      width: 20vh;
-  }
   h5{
     font-size: 5vh;
     background-color: var(--footer);
   }
   h4{
       line-height: 5vh;
-  }
-  button{
-    margin-bottom: 2vh;
   }
   ul,ol{
     margin-left: 20vw;
@@ -276,6 +289,10 @@ iframe{
       border-radius: 0%;
       padding: 0.5vh;
       box-shadow: 0 0px 0px 0 var(--hatter), 0 0px 0px 0 var(--hatter);
+  }
+  #terkepnapi{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   #fooldalboxmeret{
     height: 89vh;
@@ -294,6 +311,7 @@ iframe{
       border-top: 4px solid #252b2b;
       border-bottom: 4px solid #252b2b;
   }
+  
 }
 @media only screen and (max-width: 400px){
     table{

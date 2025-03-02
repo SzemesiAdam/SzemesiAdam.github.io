@@ -1,6 +1,64 @@
+import { useState } from "react";
+
 function Tervek(){
     const csillagtart = [
-        
+        // {
+        //     cim: '',
+        //     cim2: '',
+        //     kep: '',
+        //     szoveg: ,
+        //     utvonal: '',
+        //     megallok: ,
+        //     szallas: ,
+        //     programok: ,
+        // },
+        {
+            cim: 'Sirok csillag túra',
+            cim2: 'Fedezd fel a Mátra szívét',
+            kep: 'sirok.jpg',
+            szoveg: (
+                <>
+                    <p>
+                        Ha szereted a kanyargós utakat, a lenyűgöző panorámát és a 
+                        történelmi helyszíneket, akkor a Siroki csillagtúra neked 
+                        való! Sirok, a festői kis falu a Mátra lábánál, tökéletes 
+                        kiindulópont egy izgalmas motoros kalandhoz.
+                    </p>
+                    <p>
+                        A túra során bejárhatod a Mátrai szerpentineket, 
+                        megcsodálhatod a Siroki várat, és élvezheted a vidéki utak 
+                        nyugalmát. Útba ejtheted Parádsasvárat, ahol egy kávé 
+                        mellett gyönyörködhetsz a tájban, vagy felfedezheted a 
+                        híres Kékestetőt, Magyarország legmagasabb pontját.
+                    </p>
+                    <p>
+                        A Siroki csillagtúra garantáltan felejthetetlen élményt 
+                        nyújt minden motoros számára. Pattanj nyeregbe, és indulj 
+                        útnak a Mátra varázslatos vidékein!
+                    </p>
+                </>
+            ),
+            utvonal: "https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d694203.0817481116!2d19.148368819569264!3d47.18270726953253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas!3m2!1d46.435440899999996!2d19.483428399999998!4m5!1s0x4743da6108f61c3f%3A0x400c4290c1e1180!2sKecskem%C3%A9t!3m2!1d46.896371099999996!2d19.6896861!4m5!1s0x4741064d7c358985%3A0x400c4290c1e13c0!2zSsOhc3piZXLDqW55!3m2!1d47.500184499999996!2d19.9062865!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!5e0!3m2!1shu!2shu!4v1740834774832!5m2!1shu!2shu",
+            megallok: (
+                <>
+                    <ul>
+                        <li>Cegléd - SHell kút</li>
+                    </ul>
+                </>
+            ),
+            szallas: (
+                <>
+                    <ul>
+                        <li><a href="https://www.varcamping.hu/rolunk" target="_blank">VÁR-CAMPING</a></li>
+                    </ul>
+                </>
+            ),
+            programok: "",
+            elson: "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d85455.59106575917!2d20.15224624977366!3d47.984970585778385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!4m3!3m2!1d48.0110457!2d20.1202871!4m3!3m2!1d48.051223799999995!2d20.153619499999998!4m3!3m2!1d48.022757999999996!2d20.293351899999998!4m3!3m2!1d47.9090038!2d20.3705702!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok%2C%203332!3m2!1d47.9319682!2d20.1944831!5e0!3m2!1shu!2shu!4v1740838284634!5m2!1shu!2shu",
+            masodikn: "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d678215.3136413434!2d19.645434170502906!3d48.39359327952768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok%2C%203332!3m2!1d47.9319682!2d20.1944831!4m5!1s0x473fa322abfc2b45%3A0x3a0d4a87ead1bae!2s587%2C%20049%2011%2C%20Szlov%C3%A1kia!3m2!1d48.555939599999995!2d20.3997614!4m3!3m2!1d48.789407499999996!2d20.3998392!4m3!3m2!1d48.8561992!2d20.379976499999998!4m3!3m2!1d48.8216561!2d20.4865752!4m3!3m2!1d48.6420503!2d20.3675426!4m3!3m2!1d48.5466846!2d20.3955987!4m3!3m2!1d48.058542499999994!2d20.2581935!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!5e0!3m2!1shu!2shu!4v1740909125378!5m2!1shu!2shu",
+            harmadikn: "https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d170850.00046261656!2d20.243273048507838!3d48.003445266258204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!4m5!1s0x47409cdb2628f481%3A0x9a3b7db50986c50c!2sMiskolc%2C%20Lillaf%C3%BCred!3m2!1d48.098566899999994!2d20.621813!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!5e0!3m2!1shu!2shu!4v1740907844618!5m2!1shu!2shu",
+        },
+
     ];
     const tobbnaptart = [
         {
@@ -33,7 +91,7 @@ function Tervek(){
                     </p>
                 </>
             ),
-            utvonal: "https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d408713.3412955828!2d18.47991047347688!3d46.26075828974428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas!3m2!1d46.435440899999996!2d19.483428399999998!4m3!3m2!1d46.2066397!2d18.7212516!4m3!3m2!1d46.2385045!2d18.6332174!4m3!3m2!1d46.1375277!2d18.122639799999998!4m5!1s0x4742a58795da870f%3A0x400c4290c1e4d80!2zT3JmxbEsIDc2Nzc!3m2!1d46.1504207!2d18.1423992!5e1!3m2!1shu!2shu!4v1740312152308!5m2!1shu!2shu",
+            utvonal: "https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1412721.9209564133!2d17.475884828026743!3d46.24580434348135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x4743d1595e04083b%3A0x1300c428eb07e822!2s6400%2C%20Kiskunhalas!3m2!1d46.419029699999996!2d19.468636399999998!4m5!1s0x4742dda63c30b873%3A0x987646d50d053e02!2zQWxzw7NuecOpa2kga3VsdMO6cmjDoXosIEFsc8OzbnnDqWssIDcxNDg!3m2!1d46.202727599999996!2d18.7370846!4m5!1s0x4742e9f13aebe3dd%3A0xb6e874757df53d2e!2zNTYwMyAxNSwgTcOzcsOhZ3ksIDcxNjU!3m2!1d46.2383793!2d18.6331863!4m5!1s0x4742af4dfa1bf987%3A0x63c3fa45d906a268!2zSG90ZWwgQWJhbGlnZXQsIEFiYWxpZ2V0LCDDnGTDvGzFkXRlcsO8bGV0LCA3Njc4!3m2!1d46.1381234!2d18.1150734!4m5!1s0x4742af76fb39ea4b%3A0xb00c428ea8ba473!2zNzY3NywgT3JmxbE!3m2!1d46.1556743!2d18.1595984!5e0!3m2!1shu!2shu!4v1740909699921!5m2!1shu!2shu",
             megallok:(
                 <ul>
                     <li>Bonyhád - Mol kút</li>
@@ -112,20 +170,18 @@ function Tervek(){
                     </p>
                 </>
             ),
-            utvonal: "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d811236.1969714137!2d18.02441358246047!3d46.67455329695039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas%2C%206400!3m2!1d46.435440899999996!2d19.483428399999998!4m5!1s0x4743ae2d5dc43a5b%3A0x400c4290c1e1660!2sSoltvadkert!3m2!1d46.5789287!2d19.3938029!4m5!1s0x4769d51219bf6cb3%3A0x33399b5b497c28de!2zVGFtw6FzaQ!3m2!1d46.633201799999995!2d18.2854998!4m5!1s0x4769b9dc944a4013%3A0x400c4290c1e68c0!2zS8WRcsO2c2hlZ3k!3m2!1d46.8350066!2d17.8988043!4m5!1s0x4769b96fad25cfdd%3A0x400c4290c1ed6b0!2zU3rDoW50w7NkLCA4NjIy!3m2!1d46.877243899999996!2d17.906259!4m5!1s0x4769bb7f616e10ad%3A0x400c4290c1e5700!2sTihany!3m2!1d46.9128663!2d17.888000599999998!5e1!3m2!1shu!2shu!4v1740308420134!5m2!1shu!2shu",
+            utvonal: "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d1402208.0060654797!2d17.358623932283745!3d46.652686007344954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x4743d1595e04083b%3A0x1300c428eb07e822!2s6400%2C%20Kiskunhalas!3m2!1d46.419029699999996!2d19.468636399999998!4m5!1s0x4743afd8768825e5%3A0xb00c428ea86a1f3!2s6230%2C%20Soltvadkert!3m2!1d46.5529096!2d19.3887927!4m5!1s0x4769d5376f40462b%3A0x1300c428ead5d392!2zNzA5MCwgVGFtw6FzaQ!3m2!1d46.657512499999996!2d18.306141999999998!4m5!1s0x4769b76191a15ac3%3A0xb00c428eace5ba3!2zODYxNywgS8WRcsO2c2hlZ3k!3m2!1d46.8270224!2d17.9100248!4m5!1s0x4769bbd86b33a9ab%3A0xb00c428ea4b3153!2zODYyMiwgU3rDoW50w7Nk!3m2!1d46.8764708!2d17.913501099999998!4m5!1s0x4769bc981950381f%3A0xb00c428ea4d81b3!2s8237%2C%20Tihany!3m2!1d46.8973608!2d17.8770164!5e0!3m2!1shu!2shu!4v1740909789852!5m2!1shu!2shu",
             megallok:(
                 <ul>
                     <li>Solt - Kurta Kocsma Vendglő</li>
-                    <li>Tamási - Mol Benzinkút</li>
+                    <li>Tamási - Mol kút</li>
                     <li>Simontornya - Tulipán Étterem</li>
                     <li>Kőröshegy előtti körforgelom - Kőröshegyi völgyhid</li>
                     <li>Szántod - Komp</li>
                     <li>Tihany rév - Komp</li>
                 </ul>
             ),
-            szallas:(
-                ""
-            ),
+            szallas: "",
             programok:(
                 <ul>
                     <li>Siófok - Fordított ház</li>
@@ -148,13 +204,11 @@ function Tervek(){
                     két keréken szeretné felfedezni a vidéket.
                 </p>
             ),
-            utvonal: "https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d204104.488008358!2d19.64891910552977!3d46.328379819168696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas!3m2!1d46.435440899999996!2d19.483428399999998!4m3!3m2!1d46.2737884!2d19.5657207!4m5!1s0x474487e22bcce54b%3A0x400c4290c1e1190!2sSzeged!3m2!1d46.2530102!2d20.141425299999998!5e1!3m2!1shu!2shu!4v1740311016923!5m2!1shu!2shu",
+            utvonal: "https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d705473.2739223978!2d19.14549245140449!3d46.31470347274344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x4743d1595e04083b%3A0x1300c428eb07e822!2s6400%2C%20Kiskunhalas!3m2!1d46.419029699999996!2d19.468636399999998!4m3!3m2!1d46.272019!2d19.5352682!4m5!1s0x474487e22bcce54b%3A0x400c4290c1e1190!2sSzeged!3m2!1d46.2530102!2d20.141425299999998!5e0!3m2!1shu!2shu!4v1740909853713!5m2!1shu!2shu",
             megallok:(
                 ""
             ),
-            szallas:(
-                ""
-            ),
+            szallas: "",
             programok:(
                 <ul>
                     <li>Napfényfürdő Aquapolis Szeged</li>
@@ -210,7 +264,7 @@ function Tervek(){
             icon.setAttribute("data-open", "false");
         }
     }
-
+    const [napiterkep, setNapiterkep] = useState("https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d85455.59106575917!2d20.15224624977366!3d47.984970585778385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok!3m2!1d47.9319682!2d20.1944831!4m3!3m2!1d48.0110457!2d20.1202871!4m3!3m2!1d48.051223799999995!2d20.153619499999998!4m3!3m2!1d48.022757999999996!2d20.293351899999998!4m3!3m2!1d47.9090038!2d20.3705702!4m5!1s0x47408a7d2f45a063%3A0x400c4290c1e3270!2sSirok%2C%203332!3m2!1d47.9319682!2d20.1944831!5e0!3m2!1shu!2shu!4v1740838284634!5m2!1shu!2shu");  // Állapotkezelés
     return(
         <>
             <section id="tervek" style={{display: "none"}}>
@@ -230,6 +284,15 @@ function Tervek(){
                                     <iframe src={item.utvonal}></iframe>
                                 </div>
                                 {ellenorzo(item.megallok, item.szallas, item.programok)}
+                                <h3>Napi tervek</h3>
+                                <div className="napokbox">
+                                    <button onClick={() => setNapiterkep(item.elson)}>1.nap</button>
+                                    <button onClick={() => setNapiterkep(item.masodikn)}>2.nap</button>
+                                    <button onClick={() => setNapiterkep(item.harmadikn)}>3.nap</button>
+                                </div>
+                                <div className="terkep">
+                                    <iframe src={napiterkep} id="terkepnapi"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
