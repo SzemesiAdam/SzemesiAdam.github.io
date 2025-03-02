@@ -304,6 +304,9 @@ iframe{
       margin-top: 0px;
       border-top-right-radius: 0%;
   }
+  .itemheader{
+    border-top-right-radius: 0px;
+  }
   iframe{
       width: 100vw;
       border-radius: 0%;
