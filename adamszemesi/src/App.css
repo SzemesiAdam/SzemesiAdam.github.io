@@ -1,10 +1,24 @@
 :root{
-
+  --hatter: #0a0e14;
+  --feher: #f4fefe;
 }
 /* tagek */
 *{
   margin: 0px;
   padding: 0px;
+}
+nav{
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid yellow;
+}
+button{
+  color: var(--feher);
+
+  margin-right: 2vw;
+  border: 0px;
 }
 
 /* class */
