@@ -1,0 +1,123 @@
+:root{
+    --fekete: black;
+    --szurke: #444342;
+    --feher: white;
+    --arany: #ffd000;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    height: 100vh;
+    background-image: url(headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid var(--arany);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    height: 8vh;
+    background-color: var(--fekete);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--arany);
+}
+nav{
+    height: 7vh;
+    width: 90%;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--feher);
+    border: 2px solid var(--fekete);
+    border-radius: 40px;
+    z-index: 2;
+    position: fixed;
+}
+button{
+    height: 6vh;
+    width: 150px;
+    border: 0px;
+    color: var(--fekete);
+    background: transparent;
+    padding: 1vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+button:hover{
+    border: 2px solid var(--arany); 
+    transition: transform 0.4s ease-in-out;
+    border-radius: 40px;
+}
+nav button:focus{
+    transition: 0.3s;
+    background-color: var(--arany);
+    color: var(--feher);
+    border-radius: 40px;
+}
+h1{
+    margin-top: 35vh;
+    color: var(--fekete);
+    font-family: Arial;
+    font-size: 15vh;
+    text-transform: uppercase;
+    text-shadow: 8px 1px var(--arany);
+}
+h2{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: var(--arany);
+    color: var(--fekete);
+}
+h4{
+    color: var(--fekete);
+    font-size: 5vh;
+}
+p{
+    margin: 3vh;
+}
+
+
+
+
+/* class */
+.navbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itembox{
+    width: 60%;
+    height: 30%;
+    border-radius: 20px;
+}
+.item{
+    border: 3px solid var(--arany);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: var(--szurke);
+    font-size: 2vh;
+}

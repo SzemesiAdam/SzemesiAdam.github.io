@@ -170,6 +170,43 @@ function Mega_girl(){
             leiras: "kép (model) kevés",
         }
     ];
+    const others = [
+        {
+            nev: 'Hot-girl(more)',
+            kep: 'hot-girl(more).jpg',
+            link: 'https://mega.nz/folder/J61GHTIb#3n8aph7PKhgZVPDHmQUTLA',
+        },
+        {
+            nev: 'Brazzers',
+            kep: 'Brazzers.jpg',
+            link: 'https://mega.nz/folder/kvMlEJ4S#A5-axM_PUSUOvBPwpBORhA/folder/ky1HEAoC',
+        },
+        {
+            nev: 'Hot Ass',
+            kep: 'hotass.jpg',
+            link: 'https://mega.nz/folder/qzoyiQyQ#X2FDRdlDzJAEMIMhsNCdAQ/folder/Kn401ZTQ',
+        },
+        {
+            nev: '+18 Tiktok',
+            kep: '18tiktok.jpg',
+            link: 'https://mega.nz/folder/JEgWmKAD#44A8KvUW0Sk5kMKb0c4eeA/folder/0MwAVC6L',
+        },
+        {
+            nev: '2Tb porn',
+            kep: '2tbporn.jpg',
+            link: 'https://mega.nz/folder/jrRSgbSY#I7D9qcr4vc6M1ZtJ8Xeftg/folder/66RxmbiD',
+        },
+        {
+            nev: 'T Photo',
+            kep: 'tphoto.jpg',
+            link: 'https://mega.nz/folder/YXNFEA6K#3KvBIXM-QSQbpRND8vHcZw',
+        },
+        {
+            nev: 'More Porn',
+            kep: 'moreporn.jpg',
+            link: 'https://mega.nz/folder/aNNWjbiC#Sr8L9Bc5YnFG2DYfTaqcjw/folder/TRUwiRBS',
+        }
+    ];
     return(
         <>
             <section id="mega_girl" style={{display: "block"}}>
@@ -178,6 +215,7 @@ function Mega_girl(){
                     <a href="#hg"><button>Hot Girls</button></a>
                     <a href="#hm"><button>Hot Models</button></a>
                     <a href="#m"><button>Models</button></a>
+                    <a href="#others"><button>Others</button></a>
                 </div>
                 <br id="sg"/>
                 <h3>Sexy Girls</h3>
@@ -234,6 +272,23 @@ function Mega_girl(){
                 <h3>Models</h3>
                 <div className="container">
                     {mtart.map((item) => (
+                        <a href={item.link} target="_blank" key={item.nev}>
+                            <div className="item">
+                                <div className="itembg">
+                                    <img src={item.kep} className="itemimg"/>
+                                </div>
+                                <div className="itemtitle">
+                                    <h2>{item.nev}</h2>
+                                    <p>{item.leiras}</p>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+                <br id="others"/>
+                <h3>Others</h3>
+                <div className="container">
+                    {others.map((item) => (
                         <a href={item.link} target="_blank" key={item.nev}>
                             <div className="item">
                                 <div className="itembg">

@@ -24,6 +24,11 @@ function Ph_profil(){
             nev: 'Luna Vitaler',
             kep: 'Luna Vitaler.jpg',
             link: 'https://www.pornhub.com/model/luna-vitaler',
+        },
+        {
+            nev: 'Alexis Tae',
+            kep: 'Alexis Tae.jpg',
+            link: 'https://www.pornhub.com/pornstar/alexis-tae',
         }
     ];
     return(

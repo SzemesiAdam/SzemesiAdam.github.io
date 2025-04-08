@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="my_webpage.css">
     <title>Szemesi Ádám</title>
-    <link rel="shortcut icon" href="k/mando_icon.png">
 </head>
 <body>
     <!--menu; cim; könyvjelzök-->
@@ -14,7 +13,6 @@
             <button onclick="order('fooldal')">Főoldal</button>
             <button onclick="order('ismerjmeg')">Ismerj meg</button>
             <button onclick="order('referencia')">Referenciamunkák</button>
-            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
         </div>
         <div onclick="order('menu')" class="mobilmenu">
             <span id="e"></span><span id="e"></span><span id="e"></span>
@@ -25,19 +23,18 @@
             <button onclick="order('fooldal')">Főoldal</button>
             <button onclick="order('ismerjmeg')">Ismerj meg</button>
             <button onclick="order('referencia')">Referenciamunkák</button>
-            <button onclick="order('elerhetosegek')">Elérhetőségek</button>
         </div>
     </section>
+    <header>
+
+    </header>
     <!--főoldal-->
     <section id="fooldal" style="display: block;">
-        <div class="title">
-            <h1>Köszöntelek a weboldalamon!</h1>
-        </div>
-        <div class="menu">
-            <div id="fooldalkepkbox">
+        <div class="container">
+            <div class="box">
                 <img src="k/baja-3.jpg" class="fk">
             </div>
-            <div id="fooldalitem">
+            <div class="box">
                 <div class="item">
                     <p>
                         Azért készitettem ezt a weboldalt hogy bemutasam magam, a 
@@ -511,35 +508,9 @@
             </div>
         </div>
     </section>
-    <!--elérhetőségek-->
-    <section id="elerhetosegek" style="display: none;">
-        <div class="title">
-            <h1>Elérhetőségek</h1>
-        </div>
-        <div class="menu">
-            <div id="elerhetoseg" >
-                <div>
-                    <h3>Email:</h3>
-                    <p>adm.szemsi@gmil.com</p>
-                    <br>
-                    <h3>Tel. szám:</h3>
-                    <p>+36 70...</p>
-                </div>
-            </div>
-            <div class="boxicon">
-                <div>
-                    <a href="https://www.facebook.com/adam.szemesi.7?locale=hu_HU" target="_blank"><img src="k/facebook.png" class="icon"></a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/adamszemesi/" target="_blank"><img src="k/social.png" class="icon"></a>
-                </div>
-                <div>
-                    <a href="https://www.tiktok.com/@szemesi.adam?lang=hu-HU" target="_blank"><img src="k/tik-tok.png" class="icon"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer>
 
+    </footer>
     <script src="my_webpage.js"></script>
 </body>
 </html>
