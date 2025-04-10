@@ -56,7 +56,13 @@ function App() {
 
   return (
     <>
-      <div className='navbox'>
+      <header>
+        <div className="title">
+          <h1>WatchIt</h1>
+          <h4>{alcim}</h4>
+        </div>
+      </header>
+      <div>
         <nav id='navbar'>
             <div className="menubar">
                 <button onClick={() => order("fooldal")}>Főoldal</button>
@@ -64,26 +70,8 @@ function App() {
                 <button onClick={() => order("sorozatok")}>Sorozatok</button>
                 <button onClick={() => order("jatekok")}>Játékok</button>
             </div>
-            <div onClick={() => order("menu")} className="mobilmenu">
-                <span id="e"></span><span id="e"></span><span id="e"></span>
-            </div>
         </nav>
       </div>
-      {/* mobilmenu */}
-      <section id="menu" style={{display: "none"}}>
-          <div className="menupage">
-              <button onClick={() => order("fooldal")}>Főoldal</button>
-              <button onClick={() => order("filmek")}>Filmek</button>
-              <button onClick={() => order("sorozatok")}>Sorozatok</button>
-              <button onClick={() => order("jatekok")}>Játékok</button>
-          </div>
-      </section>
-      <header>
-        <div className="title">
-          <h1>WatchIt</h1>
-          <h4>{alcim}</h4>
-        </div>
-      </header>
       <Fooldal/>
       <Filmek/>
       <Sorozatok/>

@@ -9,6 +9,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  background-color: rgb(226, 226, 226);
+  background-color: var(--arany);
   color: var(--feher);
 }

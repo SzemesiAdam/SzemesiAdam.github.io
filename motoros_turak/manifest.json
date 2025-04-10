@@ -1,0 +1,16 @@
+{
+    "name": "Motoros Túrák",
+    "short_name": "Motoros Túrák",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FEFEFE",
+    "theme_color": "#D2691E",
+    "icons": [
+      {
+        "src": "./mticon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

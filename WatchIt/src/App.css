@@ -1,6 +1,7 @@
 :root{
     --fekete: black;
-    --szurke: #444342;
+    --sarga: #CDB101;
+    --szurke: #7F7F7E;
     --feher: white;
     --arany: #ffd000;
 }
@@ -11,59 +12,43 @@
 }
 
 header{
-    height: 100vh;
+    height: 85vh;
     background-image: url(headerbg.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: 5px solid var(--arany);
-    z-index: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 footer{
     height: 8vh;
     background-color: var(--fekete);
+    color: var(--feher);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid var(--arany);
+    border-top: 5px solid var(--feher);
 }
 nav{
-    height: 7vh;
-    width: 90%;
-    margin-top: 1vh;
+    height: 15vh;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: var(--feher);
-    border: 2px solid var(--fekete);
-    border-radius: 40px;
-    z-index: 2;
-    position: fixed;
 }
-button{
-    height: 6vh;
-    width: 150px;
+nav button{
+    height: 8vh;
+    width: 10vw;
     border: 0px;
     color: var(--fekete);
     background: transparent;
-    padding: 1vh;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     font-weight: bold;
-}
-button:hover{
-    border: 2px solid var(--arany); 
-    transition: transform 0.4s ease-in-out;
-    border-radius: 40px;
-}
-nav button:focus{
-    transition: 0.3s;
-    background-color: var(--arany);
-    color: var(--feher);
-    border-radius: 40px;
+    margin: 2vh;
 }
 h1{
-    margin-top: 35vh;
     color: var(--fekete);
     font-family: Arial;
     font-size: 15vh;
@@ -78,7 +63,7 @@ h2{
     border-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: var(--arany);
+    background-color: var(--feher);
     color: var(--fekete);
 }
 h4{
@@ -93,11 +78,6 @@ p{
 
 
 /* class */
-.navbox{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .title{
     text-align: center;
 }
@@ -114,10 +94,30 @@ p{
     border-radius: 20px;
 }
 .item{
-    border: 3px solid var(--arany);
+    border: 3px solid var(--feher);
     border-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     background-color: var(--szurke);
     font-size: 2vh;
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 20vw;
+    }
+    h4{
+        font-size: 4vh;
+    }
+    nav button{
+        width: 100%;
+        height: auto;
+        font-size: 3vh;
+    }
 }
