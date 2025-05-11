@@ -1,0 +1,54 @@
+#root{
+  --piros: red;
+  --feher: white;
+  --bgszurke: #242424;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{
+  height: 5vh;
+  width: 100%;
+  background-color: var(--piros);
+  border-bottom: 2px solid var(--feher);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header{
+  height: 95vh;
+  width: 100%;
+  background-image: url("/headerbg.jpg");
+  filter: brightness(50%);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h4{
+  color: var(--feher);
+  font-size: 3vh;
+}
+
+
+
+
+/* class */
+.logo{
+  width: 500px;
+  height: 500px;
+}
+.title{
+  position: relative;
+  border: 1px solid yellow;
+  height: 70vh;
+  text-align: center;
+  filter: brightness(100%);
+}

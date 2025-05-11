@@ -29,6 +29,11 @@ function Ph_profil(){
             nev: 'Alexis Tae',
             kep: 'Alexis Tae.jpg',
             link: 'https://www.pornhub.com/pornstar/alexis-tae',
+        },
+        {
+            nev: 'Ginebra Bellucci',
+            kep: 'Ginebra Bellucci.jpg',
+            link: 'https://www.pornhub.com/pornstar/ginebra-bellucci',
         }
     ];
     return(
