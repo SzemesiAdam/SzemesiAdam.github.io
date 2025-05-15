@@ -1,0 +1,16 @@
+{
+    "name": "Girls Links",
+    "short_name": "Girls Links",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FEFEFE",
+    "theme_color": "#111d2a",
+    "icons": [
+      {
+        "src": "./girlslinksicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

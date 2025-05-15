@@ -1,0 +1,16 @@
+{
+    "name": "Gym Khalifa",
+    "short_name": "Gym Khalifa",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#8f0b13",
+    "theme_color": "#8f0b13",
+    "icons": [
+      {
+        "src": "./gym_khalifaicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
