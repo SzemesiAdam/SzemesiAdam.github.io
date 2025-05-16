@@ -41,10 +41,10 @@ function App() {
       <Csapatunk/>
       <footer>
         <div className='icons'>
-          <a href="https://www.facebook.com/gymkhalifa/" target='_blank'><img className='iconskep' src="public/facebook-removebg-preview.png"/></a>
-          <a href="https://www.instagram.com/gym_khalifa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'><img className='iconskep' src="public/instagram-removebg-preview.png"/></a>
-          <a href="https://www.tiktok.com/@gym.khalifa?is_from_webapp=1&sender_device=pc" target='_blank'><img className='iconskep' src="public/tiktok-removebg-preview.png"/></a>
-          <img className='iconskep' src="public/youtube-removebg-preview.png"/>
+          <a href="https://www.facebook.com/gymkhalifa/" target='_blank'><img className='iconskep' src="facebook-removebg-preview.png"/></a>
+          <a href="https://www.instagram.com/gym_khalifa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'><img className='iconskep' src="instagram-removebg-preview.png"/></a>
+          <a href="https://www.tiktok.com/@gym.khalifa?is_from_webapp=1&sender_device=pc" target='_blank'><img className='iconskep' src="tiktok-removebg-preview.png"/></a>
+          <img className='iconskep' src="youtube-removebg-preview.png"/>
         </div>
         <div className='footeridezet'>
           <p>"Minden egyes ismétlés közelebb visz ahhoz, aki lenni akarsz."</p>

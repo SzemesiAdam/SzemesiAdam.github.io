@@ -4,7 +4,7 @@ function Fooldal(props){
         <section id="fooldal" style={{display: "block"}}>
             <header>
                 <div className='title'>
-                    <img src="/gym_khalifaicon.png" className='logo'/>
+                    <img src="gym_khalifaicon.png" className='logo'/>
                     <button onClick={() => {props.setItem('rolunk')}}>Rólunk</button>
                 </div>
             </header>
@@ -28,7 +28,7 @@ function Fooldal(props){
                     </div>
                 </div>
                 <div className='containeritem'>
-                    <img src="public/fooldalkep.jpg" className='fooldalkep'/>
+                    <img src="fooldalkep.jpg" className='fooldalkep'/>
                 </div>
             </div>
         </section>

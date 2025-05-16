@@ -30,7 +30,7 @@ function Rolunk(){
                         </p>
                     </div>
                     <div className="item60">
-                        <img src="./public/cityiroda.png" className="item60kep"/>
+                        <img src="cityiroda.png" className="item60kep"/>
                     </div>
                     <div className="item60">
                         <h2>Nyitvatartás</h2>
@@ -73,7 +73,7 @@ function Rolunk(){
                         </div>
                     </div>
                     <div className="containeritem">
-                        <img src="./public/siker1.jpg" className="fooldalkep"/>
+                        <img src="siker1.jpg" className="fooldalkep"/>
                     </div>
                 </div>
                 <div className="fooldalcontainer">
@@ -99,7 +99,7 @@ function Rolunk(){
                         </div>
                     </div>
                     <div className="containeritem">
-                        <img src="./public/siker2.jpg" className="fooldalkep"/>
+                        <img src="siker2.jpg" className="fooldalkep"/>
                     </div>
                 </div>
                 <div className="fooldalcontainer">
@@ -112,9 +112,9 @@ function Rolunk(){
                                 Abszolút bajnok kategóriában a II. helyet sikerült elérnem.
                             </p>
                             <ul>
-                                <li>Első fogás: 72.5 kilogramm ✅✅✅</li>
-                                <li>Második fogás: 75 kilogramm ✅✅✅</li>
-                                <li>Harmadik fogás: 76.5 kilogramm ✅✅✅</li>
+                                <li>Első fogás: 72.5 kg ✅✅✅</li>
+                                <li>Második fogás: 75 kg ✅✅✅</li>
+                                <li>Harmadik fogás: 76.5 kg ✅✅✅</li>
                             </ul>
                             <p>
                                 Ezzel megdöntöttem az Országos Liga Rekordot (76 kilogramm), amit korábban én tartottam!
@@ -122,7 +122,7 @@ function Rolunk(){
                         </div>
                     </div>
                     <div className="containeritem">
-                        <img src="./public/siker3.jpg" className="fooldalkep"/>
+                        <img src="siker3.jpg" className="fooldalkep"/>
                     </div>
                 </div>
             </section>
