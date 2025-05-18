@@ -14,19 +14,19 @@ function Araink(){
                     <table>
                         <tbody>
                             <tr>
-                                <td>Korlátlan bérlet</td><td>17 000Ft</td>
+                                <td>Korlátlan bérlet</td><td>17000 Ft</td>
                             </tr>
                             <tr>
-                                <td>Korlátlan bérlet (diák)</td><td>14 000Ft</td>
+                                <td>Korlátlan bérlet (diák)</td><td>14000 Ft</td>
                             </tr>
                             <tr>
-                                <td>10 alkalmas bérlet</td><td>14 000Ft</td>
+                                <td>10 alkalmas bérlet</td><td>14000 Ft</td>
                             </tr>
                             <tr>
-                                <td>10 alkalmas bérlet (diák)</td><td>13 000Ft</td>
+                                <td>10 alkalmas bérlet (diák)</td><td>13000 Ft</td>
                             </tr>
                             <tr>
-                                <td>3 havi bérlet</td><td>45 000Ft</td>
+                                <td>3 havi bérlet</td><td>45000 Ft</td>
                             </tr>
                         </tbody>
                     </table>
