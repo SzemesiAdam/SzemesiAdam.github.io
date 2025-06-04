@@ -13,7 +13,7 @@ function Ph_site(){
         },
                 {
             nev: 'Hitomi.la',
-            kep: 'hitomi.la.jpg',
+            kep: 'hitomi.la.png',
             link: 'https://hitomi.la/',
         }
     ];
