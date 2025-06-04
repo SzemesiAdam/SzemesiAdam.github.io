@@ -10,6 +10,11 @@ function Ph_site(){
             nev: 'hentai.tv',
             kep: 'hentai.tv.jpg',
             link: 'https://hentai.tv/',
+        },
+                {
+            nev: 'Hitomi.la',
+            kep: 'hitomi.la.jpg',
+            link: 'https://hitomi.la/',
         }
     ];
     return(
