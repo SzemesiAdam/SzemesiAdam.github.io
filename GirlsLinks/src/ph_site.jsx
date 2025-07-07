@@ -15,6 +15,11 @@ function Ph_site(){
             nev: 'Hitomi.la',
             kep: 'hitomi.la.png',
             link: 'https://hitomi.la/',
+        },
+        {
+            nev: 'PornPics',
+            kep: 'PornPics.png',
+            link: 'https://www.pornpics.com/',
         }
     ];
     return(
