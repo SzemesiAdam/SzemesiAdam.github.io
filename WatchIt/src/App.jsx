@@ -16,7 +16,10 @@ window.addEventListener("scroll", function() {
     }
 });
 
+
+
 function App() {
+
   //js függvények helye
   const oldalak = ["fooldal", "filmek", "sorozatok", "jatekok", "menu"]
   const alcimek = ["Köszöntelek a weboldalon!", "Filmek", "Sorozatok", "Játékok"]

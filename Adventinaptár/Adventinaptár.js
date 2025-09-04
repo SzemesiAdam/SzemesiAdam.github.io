@@ -1,5 +1,6 @@
 
-const today = new Date();
+const today = new Date("2025-12-24");
+console.log(today);
 let year = today.getFullYear();
 const adventStart = new Date(year, 11, 1); // December 1.
 const adventEnd = new Date(year, 11, 24); // December 24.
@@ -7,7 +8,7 @@ var mounth = today.getMonth() + 1;
 var day = today.getDate();
 var counter = 0;
 
-if(mounth == 12 && day < 24){
+if(mounth == 12 && day <= 24){
     if(day == 6){
         document.getElementById('nap').innerHTML = "Boldog Mikulást!"
     }

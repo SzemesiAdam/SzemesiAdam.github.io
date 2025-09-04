@@ -55,6 +55,12 @@ footer{
     border: 2px solid yellow;
     border-radius: 20px;
 }
+.hivatkozas{
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 2rem;
+    float: right;
+}
 h2{
     width: 50%;
     height: 10%;

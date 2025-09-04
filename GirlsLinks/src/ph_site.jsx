@@ -20,6 +20,11 @@ function Ph_site(){
             nev: 'PornPics',
             kep: 'PornPics.png',
             link: 'https://www.pornpics.com/',
+        },
+        {
+            nev: 'EroASMR',
+            kep: 'EroASMR.png',
+            link: 'https://eroasmr.com/',
         }
     ];
     return(
