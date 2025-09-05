@@ -18,14 +18,17 @@
     </header>
     <nav>
         <div class="pcmenu">
-            <button>Főoldal</button>
-            <button>Ismerjmeg</button>
-            <button>Portfolió</button>
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerjmeg</button>
+            <button onclick="order('portfolio')">Portfolió</button>
         </div>
-        <!-- <div class="mobilmenu">
-            <button></button>
-        </div> -->
+        <div class="mobilmenu">
+            <button>    </button>
+        </div>
     </nav>
+    <section id="menu" style="display: none;">
+
+    </section>
     <section id="fooldal" style="display: block;">
         <div class="container">
             <div class="box">
@@ -46,16 +49,64 @@
     </section>
     <!-- ismerj meg -->
     <section id="ismerjmeg" style="display: none;">
-
+        <div class="container">
+            <div class="item">
+                <p>
+                    Tudjon meg rólam többet. Nagyon sok hobbim van mert szinte minden 
+                    érdekel ami technikai vagy inforatikai műfaj. Ezentúl leírom a 
+                    végzetségeimet hogy milyen engedélyekkel rendelkezem és, hogy 
+                    milyen terveim vannak a jövőre.
+                </p>
+            </div>
+        </div>
+        <div class="cardbox">
+            <div id="hobbi1">
+                <div class="carddarkness">
+                    <h2>Hobbik</h2>
+                </div>
+            </div>
+            <div id="hobbi2">
+                <div class="carddarkness">
+                    <h2>Tulajdonságaim</h2>
+                </div>
+            </div>
+            <div id="hobbi3">
+                <div class="carddarkness">
+                    <h2>Végzetségek</h2>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- portfolio -->
     <section id="portfolio" style="display: none;">
-
+        <div class="container">
+            <div class="item">
+                <p>
+                    Elég sok dolog felkelti az érdeklődésem, így probálom magam minél 
+                    több területen kiprobálni. Gyerek koromtól érdekelt a képszerkesztés 
+                    és a videovágás.
+                </p>
+                <p>
+                    A programozást és a weboldalkészítést a középiskolában tanultam
+                     meg de nagyon sok weboldalt készitettem önszorgalomból, mint 
+                     például ezt is. Iskolámban a programozási nyelvek közül a Phytont, 
+                     a C#, a Java Scriptet és a HTML-t tanultuk meg.
+                </p>
+                <p>
+                    <span style="color: red;">!A képeimet és videoimat amelyek az oldalon találhatok kérem ne töltsék le vagy használják fel!</span>
+                </p>
+            </div>
+        </div>
     </section>
 
 
     <footer>
         <h4>Készítette: Szemesi Ádám</h4>
+        <div class="iconbox">
+            <img src="k/facebook.png">
+            <img src="k/insta.png">
+            <img src="k/tik-tok.png">
+        </div>
     </footer>
     <script src="szemesi.adam.js"></script>
 </body>
