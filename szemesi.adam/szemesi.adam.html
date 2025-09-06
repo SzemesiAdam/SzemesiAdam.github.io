@@ -9,10 +9,9 @@
 <body>
     <header>
         <div class="darkness">
-            <!-- üdvözlés -->
             <div class="title">
-                <h1>Főoldal</h1>
-                <h3>Köszöntelek a weboldalamon!</h3>
+                <h1 id="cim"></h1>
+                <h3 id="koszones"></h3>
             </div>
         </div>
     </header>
@@ -22,27 +21,31 @@
             <button onclick="order('ismerjmeg')">Ismerjmeg</button>
             <button onclick="order('portfolio')">Portfolió</button>
         </div>
-        <div class="mobilmenu">
-            <button>    </button>
+        <div class="mobilmenu" onclick="order('menu')">
+            <span></span><span></span><span></span>
         </div>
     </nav>
     <section id="menu" style="display: none;">
-
+            <button onclick="order('fooldal')">Főoldal</button>
+            <button onclick="order('ismerjmeg')">Ismerjmeg</button>
+            <button onclick="order('portfolio')">Portfolió</button>
+        </div>
     </section>
     <section id="fooldal" style="display: block;">
-        <div class="container">
+        <div class="fooldalcontainer">
             <div class="box">
-                <img src="k/baja-3.jpg" class="alokep">
+                <img src="k/baja-3.jpg" class="fooldalalokep">
             </div>
             <div class="box">
                 <p>
-                    Azért készitettem ezt a weboldalt hogy bemutasam magam, a 
-                    projektjeimet, végzetségeimet és a tulajdonságaimat. 
-                    Böngészd végig a weboldalt és remélem megtudsz pár érdekes 
-                    információt rólam. 
+                    Üdvözöllek a weboldalamon! Ezt az oldalt azért készítettem, 
+                    hogy bemutassam magam, a projektjeimet, a végzettségeimet 
+                    és a legfontosabb tulajdonságaimat. Böngészd végig az oldalt, 
+                    és remélem, hogy érdekes információkat tudsz meg rólam, 
+                    miközben betekintést nyersz a munkáimba és az érdeklődési köreimbe.
                 </p>
                 <p>
-                    A képek vagy egyéb fájlok letöltése szigorúan tilos kérem ne tedd!
+                    <span style="color: red;">A képek és videok letöltése szigorúan tilos kérem ne tedd!</span>
                 </p>
             </div>
         </div>
@@ -52,60 +55,346 @@
         <div class="container">
             <div class="item">
                 <p>
-                    Tudjon meg rólam többet. Nagyon sok hobbim van mert szinte minden 
-                    érdekel ami technikai vagy inforatikai műfaj. Ezentúl leírom a 
-                    végzetségeimet hogy milyen engedélyekkel rendelkezem és, hogy 
-                    milyen terveim vannak a jövőre.
+                    Ezen az oldalon egy kicsit közelebb engedlek magamhoz: itt megtudhatod, 
+                    mivel töltöm a szabadidőmet a Hobbik menüpont alatt, a Rólam részben 
+                    személyes gondolataimat és jellemzőimet osztom meg, a Végzettségek 
+                    fül alatt áttekintést kapsz az iskolai tapasztalataimról és képesítéseimről, 
+                    végül az Elérhetőségek menüpontban megtalálod, hogyan léphetsz velem 
+                    kapcsolatba — remélem, az oldal böngészése után tisztább képed lesz rólam.
                 </p>
             </div>
         </div>
         <div class="cardbox">
-            <div id="hobbi1">
+            <div id="ismerjmeg1" onclick="order('hobbik')">
                 <div class="carddarkness">
                     <h2>Hobbik</h2>
                 </div>
             </div>
-            <div id="hobbi2">
+            <div id="ismerjmeg2" onclick="order('rolam')">
                 <div class="carddarkness">
-                    <h2>Tulajdonságaim</h2>
+                    <h2>Rólam</h2>
                 </div>
             </div>
-            <div id="hobbi3">
+            <div id="ismerjmeg3" onclick="order('vegzetsegeim')">
                 <div class="carddarkness">
                     <h2>Végzetségek</h2>
                 </div>
             </div>
+            <div id="ismerjmeg4" onclick="order('elerhetoseg')">
+                <div class="carddarkness">
+                    <h2>Elérhetőség</h2>
+                </div>
+            </div>
         </div>
+    </section>
+    <section id="hobbik" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    Mindig is sok minden érdekelt, ezért a hobbijaimból sincs hiány. 
+                    Az egyik legnagyobb szenvedélyem a <span style="color: white;">motorozás</span> – van egy saját 
+                    motorom, egy Honda CB 500, ami igazi társam az utakon. A 
+                    szabadság érzése, amit a motorozás ad, számomra semmihez sem fogható.
+                </p>
+                <img src="k/Orfű_2025.07.22-17.jpg" class="fekvokep">
+                <p>
+                    Nagyon szeretek <span style="color: white;">fotózni és képeket szerkeszteni</span>, mert ez lehetőséget 
+                    ad arra, hogy megörökítsem a pillanatokat, és egy kicsit más szemszögből 
+                    mutassam meg a világot.<br> Emellett a sport is fontos része az életemnek: 
+                    gyakran <span style="color: white;">pingpongoztam</span> közép iskolai tanulmányaim alatt az osztálytársaimmal, 
+                    illetve a középiskolában a <span style="color: white;">röplabda</span> versenycsapat tagja voltam, ami 
+                    rengeteget tanított a csapatmunkáról és a kitartásról.
+                </p>
+                <img src="k/ropi.png" class="fekvokep">
+                <p>
+                    Egy másik különleges élmény számomra a <span style="color: white;">búvárkodás</span>, hiszen a víz alatti 
+                    világ felfedezése egészen lenyűgöző. Persze, amikor kikapcsolódásra 
+                    vágyom, akkor szívesen nézek <span style="color: white;">filmeket és sorozatokat</span> is, mert ezek 
+                    mindig új történetekkel, izgalmas világokkal ajándékoznak meg.
+                </p>
+                <p>
+                    Összességében a hobbijaimban azt szeretem a legjobban, hogy mindegyik 
+                    más-más élményt és feltöltődést ad – van, amelyik szabadságot, van, 
+                    amelyik kreativitást, és van, amelyik közösségi élményt.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="rolam" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    Úgy gondolom, nyitott és barátságos ember vagyok. Könnyen megtalálom a közös 
+                    hangot másokkal, így sok barátom van. Fontos számomra a hűség, ezért mindig 
+                    kitartok a barátaim mellett, és ugyanezt várom el tőlük is.
+                </p>
+                <img src="k/diaknap24-95.jpg" class="fekvokep">
+                <p>
+                    Szeretek csapatban dolgozni, számos iskolai projektben vettem már részt. 
+                    Jó hallgatónak és szervezőnek tartom magam, és általában aktív szerepet 
+                    vállalok a közös feladatokban és az osztály életében.
+                </p>
+                <img src="k/DSC_2430.jpg" class="fekvokep">
+                <p>
+                    Optimista szemléletű vagyok: igyekszem minden helyzetben a pozitív oldalát 
+                    látni, és a problémák megoldására koncentrálni. Összességében elégedett 
+                    vagyok önmagammal, és a barátaim szerint a legjobb tulajdonságom a 
+                    humorérzékem, ami sokszor segít könnyebbé tenni a mindennapokat.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="vegzetsegeim" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    Az első iskolám a kiskunhalasi <a href="https://sztjozsef-kkhalas.hu/" target="_blank" style="color: aqua;">Szent József Katolikus Általános Iskola és Óvoda</a> volt. 
+                    Itt kezdtem meg az iskolás éveimet, és nagyon sok szép emléket őrzök 
+                    ebből az időszakból. Nemcsak tanulni jártam ide, hanem barátokat is 
+                    szereztem, akikkel együtt nőttünk, játszottunk és fedeztük fel a világot.
+                </p>
+                <p>
+                    A tanítóim és tanáraim mindig türelmesek és segítőkészek voltak, és sokat 
+                    köszönhetek nekik. Az iskola légköre családias és barátságos volt, aminek 
+                    köszönhetően igazán otthon éreztem magam. Nagyon sok olyan alapot kaptam 
+                    itt, ami később is segített a tanulmányaim során.
+                </p>
+                <p>
+                    Megszerezhető végzetségek:
+                    (<span style="color: green; font-size: small;">Megszerzett végzetség</span>/
+                    <span style="color: red; font-size: small;">Megszerzendő végzetség</span>)
+                </p>
+                <ul id="vegzetseg">
+                    <li style="color: green;">Általános iskolai bizonyítvány</li>
+                </ul>
+                <img src="k/iskolakezd.png" class="fekvokep">
+            </div>
+            <div class="item">
+                <p>
+                    A középiskolai éveimet a kiskunhalasi <a href="https://www.teko.hu/" target="_blank" style="color: yellowgreen;">II. Rákóczi Ferenc Katolikus Gimnázium és Technikum</a>ban 
+                    töltöttem. Ez az időszak nagyon meghatározó volt számomra, hiszen itt már 
+                    nemcsak a tanulásról, hanem a jövőmről is komolyabban kellett gondolkodnom.
+                </p>
+                <p>
+                    A Tekoban sok kihívás és feladat várt rám, de közben rengeteg élményt 
+                    és tapasztalatot is szereztem. Itt mélyítettem el a tudásomat, új barátokat 
+                    ismertem meg.
+                </p>
+                <p>
+                    Az iskola segített abban, hogy fejlődjek, kitartó legyek és megtaláljam az 
+                    utamat. A tanáraim sok támogatást adtak, és mindig éreztem, hogy számíthatok 
+                    rájuk. A Teko számomra nemcsak egy tanulási hely volt, hanem egy 
+                    olyan szakasz az életemben, ami igazán formált és előre vitt.
+                </p>
+                <p>
+                    Megszerezhető végzetségek:
+                    (<span style="color: green; font-size: small;">Megszerzett végzetség</span>/
+                    <span style="color: red; font-size: small;">Megszerzendő végzetség</span>)
+                </p>
+                <ul id="vegzetseg">
+                    <li style="color: red;">Informatikai technikusi végzetség</li>
+                    <li style="color: green;">Éretségi</li>
+                    <li style="color: green;">Cisco bizonyitvány</li>
+                    <li style="color: green;">Gépíró bizonyitvány</li>
+                </ul>
+                <img src="k/HEADER.jpg" class="fekvokep">
+            </div>
+            <div class="item">
+                <table>
+                    <tr>
+                        <th colspan="2">Vezetői engedélyek</th>
+                    </tr>
+                    <tr>
+                        <td>B kategoria:</td><td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>A2 kategoria:</td><td>✅</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="elerhetoseg" style="display: none;">
+
     </section>
     <!-- portfolio -->
     <section id="portfolio" style="display: none;">
         <div class="container">
             <div class="item">
                 <p>
-                    Elég sok dolog felkelti az érdeklődésem, így probálom magam minél 
-                    több területen kiprobálni. Gyerek koromtól érdekelt a képszerkesztés 
-                    és a videovágás.
+                    A portfólió oldalamon betekintést nyerhetsz azokba a területekbe, 
+                    amelyekkel szívesen foglalkozom és amelyekben folyamatosan fejlődöm. 
+                    A képszerkesztés részben megmutatom a kreatív oldalamat, ahol a 
+                    fotók utómunkálata és az egyedi látványvilág kialakítása áll a 
+                    középpontban. A videóvágás aloldalon megtekintheted az eddigi 
+                    video projektjeimet (még nincsen sok sajnos). 
                 </p>
                 <p>
-                    A programozást és a weboldalkészítést a középiskolában tanultam
-                     meg de nagyon sok weboldalt készitettem önszorgalomból, mint 
-                     például ezt is. Iskolámban a programozási nyelvek közül a Phytont, 
-                     a C#, a Java Scriptet és a HTML-t tanultuk meg.
+                    A webfejlesztés kártyán láthatod, a már elkészült és működő 
+                    weboldalakat, míg a programozás részben bemutatom 
+                    azokat a projekteket és megoldásokat, amelyekkel kísérletezem. 
+                    Célom, hogy ezen az oldalon keresztül átfogó képet kapj a 
+                    munkáimról és arról, hogyan ötvözöm a kreativitást a technikai tudással.
                 </p>
                 <p>
                     <span style="color: red;">!A képeimet és videoimat amelyek az oldalon találhatok kérem ne töltsék le vagy használják fel!</span>
                 </p>
             </div>
         </div>
+        <div class="cardbox">
+            <div id="portfolio1" onclick="order('kepszerkesztes')">
+                <div class="carddarkness">
+                    <h2>Képszerkesztés</h2>
+                </div>
+            </div>
+            <div id="portfolio2" onclick="order('videovagas')">
+                <div class="carddarkness">
+                    <h2>Videovágás</h2>
+                </div>
+            </div>
+            <div id="portfolio3" onclick="order('webfejlesztes')">
+                <div class="carddarkness">
+                    <h2>Webfejlesztés</h2>
+                </div>
+            </div>
+            <div id="portfolio4" onclick="order('programozas')">
+                <div class="carddarkness">
+                    <h2>Programozás</h2>
+                </div>
+            </div>
+        </div>
     </section>
-
-
+    <section id="kepszerkesztes" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    Körülbelül két éve kezdtem el foglalkozni a fotózással és a 
+                    képszerkesztéssel. Azóta, amikor úton vagyok, mindig igyekszem 
+                    megörökíteni a pillanatokat, hogy később legyenek képeim, amelyeken 
+                    gyakorolhatok és fejlődhetek. Leginkább a tájképek és a portrék 
+                    állnak közel hozzám, mert ezekben érzem igazán, hogy ki tudom 
+                    fejezni a saját látásmódomat.
+                </p>
+                <p>
+                    A szerkesztéshez az <span style="color: white;">Adobe Lightroom Classic</span> programot használom, 
+                    amely rengeteg lehetőséget ad arra, hogy a fotóim a lehető 
+                    legjobban visszaadják azt a hangulatot, amit a helyszínen átéltem.
+                </p>
+            </div>
+            <div class="galeria">
+                <img src="k/baja-6.jpg" class="alokep"><img src="k/baja-2.jpg" class="alokep"><img src="k/baja-8.jpg" class="alokep">
+                <img src="k/Soltvadkert_2025.07.13-16.jpg" class="alokep"><img src="k/Bonyhád_2025.09.01-9.jpg" class="alokep"><img src="k/Soltvadkert_2025.07.13-16.jpg" class="alokep">
+            </div>
+        </div>
+    </section>
+    <section id="videovagas" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    Középiskolás koromban csatlakoztam az iskola stúdiócsapatához, 
+                    ahol gyorsan elsajátítottam a hangosítás alapjait. A videóvágással 
+                    először egy 9. osztályos projektmunka során találkoztam, amikor 
+                    egyik projekt társam és barátom mutatta meg, milyen programot 
+                    használ ez volt a <span style="color: white;">Video Pad</span>. 
+                    A projektmunka végeztével sem hagytam abba a videóvágást, 
+                    és később egy iskolai öko-projekt során már egy másik program 
+                    segítségével kamatoztattam a megszerzett tudásomat, ez volt az 
+                    <span style="color: white;">Adobe Premiere Pro</span> amit 
+                    azota is használok.
+                </p>
+                <div class="video">
+                    <video controls>
+                        <source src="k/Rex visszatér.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="k/Nerra.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="webfejlesztes" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    A webprogramozást középiskolában kezdtem el heti 1–2 órában tanulni. 
+                    Már az elején nagyon megtetszett ez a programozási terület, ezért 
+                    önszorgalomból saját weboldalakat készítettem. Az órákon a feladatokat 
+                    általában részletesebben dolgoztam ki, mint a többiek, mindig igyekeztem 
+                    valami újat beépíteni, hogy folyamatosan fejlődjek.
+                </p>
+                <p>
+                    Az alábbiakban bemutatom weboldalaim egy részét. Az első két oldal régebben 
+                    készült, ezért nem responsive, így elsősorban számítógépen érdemes megtekinteni őket.
+                </p>
+            </div>
+        </div>
+        <div class="cardbox">
+            <a href="https://szemesiadam.github.io/Star%20Wars/Star_Wars.html" target="_blank"><div id="starwars">
+                <div class="carddarkness"><h2>Star Wars</h2></div>
+            </div></a>
+            <a href="https://szemesiadam.github.io/K.T._R.C/F%C5%91oldal.html" target="_blank"><div id="ktrc">
+                <div class="carddarkness"><h2>K.T.R.C.</h2></div>
+            </div></a>
+            <a href="https://szemesiadam.github.io/Adventinaptár/Adventinaptár.html" target="_blank"><div id="adventinaptar">
+                <div class="carddarkness"><h2>Adventi naptár</h2></div>
+            </div></a>
+            <a href="https://motorosturak.netlify.app/" target="_blank"><div id="motorosturak">
+                <div class="carddarkness"><h2>Motoros Túrák</h2></div>
+            </div></a>
+            <a href="https://gymkhalifa.netlify.app/" target="_blank"><div id="gymkhalifa">
+                <div class="carddarkness"><h2>Gym Khalifa</h2></div>
+            </div></a>
+        </div>
+    </section>
+    <section id="programozas" style="display: none;">
+        <div class="container">
+            <div class="item">
+                <p>
+                    A programozás iránti érdeklődésem középiskolában kezdődött, ahol 10. 
+                    osztálytól szoftverfejlesztő szakon tanultam. Tanulmányaim során 
+                    több programozási nyelvet is elsajátítottam, többek között a <span style="color: white;">Pythont</span>, 
+                    a <span style="color: white;">C#</span>-ot, a <span style="color: white;">HTML</span>-t 
+                    és a <span style="color: white;">JavaScriptet</span>. 
+                </p>
+                <p>
+                    Barátommal közösen készítettünk egy orosz rulett játékot Pythonban, 
+                    majd egy titkosító programot C# nyelven. Az évek alatt számos 
+                    projektmunkában vettem részt, amelyek során nemcsak szakmai tudásom 
+                    fejlődött, hanem sok tapasztalatot szereztem a csapatmunkában is.
+                </p>
+            </div>
+            <div class="item">
+                <p>
+                    Most szeretném bemutatni azt a programot, amelyet a korábban említett 
+                    barátommal közösen fejlesztettünk. Az <span style="color: white;">Enigma</span> 
+                    egy egyszerű kódoló program, 
+                    amely a karaktereket egy előre megadott szám alapján „véletlenszerű” 
+                    számokkal helyettesíti. A későbbi fejlesztések során a program már képes 
+                    lett arra, hogy szöveget txt fájlból olvasson be, majd a kódolás vagy 
+                    dekódolás után visszaírja azt egy fájlba. Emellett a program jelszóval 
+                    és megbízható ellenőrző rendszerrel is rendelkezik, így biztonságosan használható.
+                </p>
+                <img src="k/e1.png" class="fekvokep">
+                <img src="k/e2.png" class="fekvokep">
+                <img src="k/e3.png" class="fekvokep">
+                <img src="k/e4.png" class="fekvokep">
+                <img src="k/e5.png" class="fekvokep">
+                <img src="k/e6.png" class="fekvokep">
+            </div>
+        </div>
+    </section>
     <footer>
-        <h4>Készítette: Szemesi Ádám</h4>
+        <div>
+            <h4>Készítette: Szemesi Ádám</h4>
+            <h4>2025.09.03.-2025.09.</h4>
+        </div>
         <div class="iconbox">
-            <img src="k/facebook.png">
-            <img src="k/insta.png">
-            <img src="k/tik-tok.png">
+            <a href="https://www.facebook.com/adam.szemesi.7" target="_blank"><img src="k/facebook.png"></a>
+            <a href="https://www.instagram.com/adamszemesi/" target="_blank"><img src="k/insta.png"></a>
+            <a href="https://www.tiktok.com/@adenn7567?is_from_webapp=1&sender_device=pc" target="_blank"><img src="k/tik-tok.png"></a>
         </div>
     </footer>
     <script src="szemesi.adam.js"></script>

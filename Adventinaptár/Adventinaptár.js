@@ -1,5 +1,5 @@
 
-const today = new Date("2025-12-24");
+const today = new Date();
 console.log(today);
 let year = today.getFullYear();
 const adventStart = new Date(year, 11, 1); // December 1.
