@@ -53,7 +53,7 @@ button{
     border-radius: 40px;
     border: 0px;
     height: 6vh;
-    width: 10vw;
+    width: 15vw;
     font-size: 100%;
     font-weight: 800;
     font-variant: small-caps;
@@ -261,7 +261,7 @@ nav{
 }
 .galeria{
     margin: auto;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     justify-self: center;
@@ -331,4 +331,22 @@ nav{
 }
 #gymkhalifa{
     background-image: url(k/gym_khalifaicon.png);
+}
+/* mobilnézet */
+@media only screen and (max-width: 1325px){
+    .cardbox{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    button{
+        width: 20vw;
+        font-size: 80%;
+    }
+    .item{
+        width: 80%;
+    }
+    .cardbox{
+        width: 100%;
+    }
 }
