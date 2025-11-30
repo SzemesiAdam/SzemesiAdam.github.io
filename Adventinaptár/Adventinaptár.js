@@ -1,5 +1,5 @@
 window.onload = loading;
-const today = new Date(2025, 11, 5); // hónap 0-val kezdődik → 11 = december
+const today = new Date(); // hónap 0-val kezdődik → 11 = december
 console.log(today);
 let year = today.getFullYear();
 const adventStart = new Date(year, 11, 1); // December 1.
