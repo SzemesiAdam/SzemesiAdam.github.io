@@ -80,7 +80,7 @@ const list = [
         hivatkozas: ""
     },
     {
-        idezet: "Ahogy idősebb leszel, rájössz hogy az emberek mindig találnak időt arra, amit igazán szeretnének és kifogást mindenre, amit nem.",
+        idezet: "Nem mindig a sors késik.<br>Néha te vagy az, aki túl korán akarsz odaérni.",
         hivatkozas: ""
     },
     {
