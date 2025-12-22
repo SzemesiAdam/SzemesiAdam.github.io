@@ -1,0 +1,30 @@
+/* class */
+.plus{
+  width: 15vw;
+  height: 15vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  border: 2px solid var(--yellow);
+  border-radius: 40px;
+}
+.plus h3{
+  height: 5vw;
+  text-align: center;
+}
+.plus div{
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--yellow);
+  border-radius: 50px;
+}
+.container{ border: 1px solid red;
+  width: 80vw;
+  display: flex;
+  justify-self: center;
+}

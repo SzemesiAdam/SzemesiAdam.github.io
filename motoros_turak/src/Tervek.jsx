@@ -153,7 +153,7 @@ function Tervek(){
             cim: 'Pusztabányai motoros túra',
             cim2: ',,Ahol lelassul az idő"',
             kep: 'pusztabanya.jpg',
-            szoveg: 
+            szoveg: (
             <>
                 <p>
                     Képzeld el, ahogy a Mecsek kanyargós útjain gurulsz, körülötted erdők, 
@@ -174,7 +174,7 @@ function Tervek(){
                     <br />
                     Egy túra, ahol nem a kilométer számít, hanem az élmény, amit hazaviszel.
                 </p>
-            </>,
+            </>),
             utvonal: 'https://www.google.com/maps/embed?pb=!1m38!1m12!1m3!1d705580.0144984327!2d18.239683743502724!3d46.30642283038761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m23!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas!3m2!1d46.435440899999996!2d19.483428399999998!4m5!1s0x47431f886d9243d3%3A0x1a3097a4b762bcc8!2sBaja!3m2!1d46.181795099999995!2d18.9543051!4m5!1s0x4742bd8f7ad27907%3A0x400c4290c1e2b00!2zU3rDoXN6dsOhcg!3m2!1d46.2737955!2d18.376871599999998!4m3!3m2!1d46.202238!2d18.3483803!5e0!3m2!1shu!2shu!4v1766351183282!5m2!1shu!2shu',
             megallok: (
                 <ul>

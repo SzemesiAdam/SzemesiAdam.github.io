@@ -1,0 +1,17 @@
+:root {
+  font-family: 'Calibri';
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--seconbg);
+  color: var(--yellow);
+
+  margin: 0;
+  padding: 0rem;
+  --yellow: #f8c61e;
+  --seconbg: #252c37;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
