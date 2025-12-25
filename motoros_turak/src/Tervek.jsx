@@ -262,6 +262,42 @@ function Tervek(){
                     <li>Napfényfürdő Aquapolis Szeged</li>
                 </ul>
             ),
+        },
+                {
+            cim: "Makó",
+            cim2: ',,Két város, egy felejthetetlen burger"',
+            kep: 'mako.jpg',
+            szoveg:(
+                <>
+                <p>
+                    Csatlakozz egy laza, egynapos motoros túrára, ahol nem a rohanásé a főszerep, 
+                    hanem az élményé. Úticélunk Makó, ahol megállunk egy ütős ebédre a Burger Paradise-ban 
+                    – szaftos hamburgerek, jó hangulat, motorosbarát megálló.
+                </p>
+                <p>
+                    Hazafelé Szegeden tartunk egy rövidebb pihenőt: séta, kávé, városi hangulat, mielőtt haza indulnánk.
+                    Ez a túra nem a tökéletes kanyarokról szól hanem a közös motorozásról és a megérdemelt kajáról szól.
+                </p>
+                <p>
+                    Ha szereted a gondtalan gurulásokat, a jó társaságot és egy igazán jó burgert egy motoros nap végén – itt a helyed.
+                </p>
+                </>
+            ),
+            utvonal: "https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d352745.1396250697!2d19.64951966230538!3d46.31338432241562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x4743a0d5b46d16f9%3A0x400c4290c1e1390!2sKiskunhalas%2C%206400!3m2!1d46.435440899999996!2d19.483428399999998!4m5!1s0x4743740fec471849%3A0x400c4290c1e2d50!2zQmFsb3Rhc3rDoWxsw6Fz!3m2!1d46.3501133!2d19.5361401!4m5!1s0x474459f9770a01a9%3A0xb99c30af89d0ec54!2sMak%C3%B3%2C%20Burger%20Paradise%2C%20J%C3%B3zsef%20Attila%20utca!3m2!1d46.2165359!2d20.4745492!5e0!3m2!1shu!2shu!4v1766698358032!5m2!1shu!2shu",
+            megallok:(
+                <ul>
+                    <li>Burger Paradise</li>
+                    <li>Szeged Tisza part</li>
+                </ul>
+            ),
+            szallas: "",
+            programok:(
+                <ul>
+                    <li>Burger Paradise</li>
+                    <li>Makó lombkorona sétány</li>
+                    <li>Maros partja</li>
+                </ul>
+            ),
         }
     ];
     
